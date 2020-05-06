@@ -1,0 +1,29 @@
+clés,articles (description),Forme complète (description),Forme complète plurielle (description),lien UG,LINK API
+volume,a,volume,volumes,https://wiki.outscale.net/display/EN/About+Volumes,https://docs-beta.outscale.com/#3ds-outscale-api-volume
+snapshot,a,snapshot,snapshots,https://wiki.outscale.net/display/EN/About+Snapshots,https://docs-beta.outscale.com/#3ds-outscale-api-snapshot
+security_group,a,security group,security groups,https://wiki.outscale.net/display/EN/About+Security+Groups,https://docs-beta.outscale.com/#3ds-outscale-api-securitygroup
+subnet,a,subnet,subnets,https://wiki.outscale.net/display/EN/About+VPCs,https://docs-beta.outscale.com/#3ds-outscale-api-subnet
+image,an,image,images,https://wiki.outscale.net/display/EN/About+OMIs,https://docs-beta.outscale.com/#3ds-outscale-api-image
+route,a,route,routes,https://wiki.outscale.net/display/EN/About+Route+Tables#AboutRouteTables-RoutesRoutesandRoutingOptions,https://docs-beta.outscale.com/#3ds-outscale-api-route
+snapshot_export_task,a,snapshot export task,snapshot export tasks,https://wiki.outscale.net/display/EN/About+Snapshots,https://docs-beta.outscale.com/#3ds-outscale-api-snapshot
+net,a,Net,Nets,https://wiki.outscale.net/display/EN/About+VPCs,https://docs-beta.outscale.com/#3ds-outscale-api-net
+security_group_rule,a,security group rule,security group rules,https://wiki.outscale.net/display/EN/About+Security+Group+Rules,https://docs-beta.outscale.com/#3ds-outscale-api-securitygrouprule
+vm,a,virtual machine (VM),virtual machines (VMs),https://wiki.outscale.net/display/EN/About+Instances,https://docs-beta.outscale.com/#3ds-outscale-api-vm
+public_ip,a,public IP,public IPs,https://wiki.outscale.net/display/EN/About+EIPs,https://docs-beta.outscale.com/#3ds-outscale-api-publicip
+internet_service,an,internet service,internet services,https://wiki.outscale.net/display/EN/About+Internet+Gateways,https://docs-beta.outscale.com/#3ds-outscale-api-internetservice
+route_table,a,route table,route tables,https://wiki.outscale.net/display/EN/About+Route+Tables,https://docs-beta.outscale.com/#3ds-outscale-api-routetable
+net_peering,a,Net peering,Net peerings,https://wiki.outscale.net/display/EN/About+VPC+Peering+Connections,https://docs-beta.outscale.com/#3ds-outscale-api-netpeering
+tag,a,tag,tags,https://wiki.outscale.net/display/EN/About+Tags,https://docs-beta.outscale.com/#3ds-outscale-api-tag
+vpn_connection,a,VPN connection,VPN connections,https://wiki.outscale.net/display/EN/About+VPN+Connections,https://docs-beta.outscale.com/#3ds-outscale-api-vpnconnection
+keypair,a,keypair,keypairs,https://wiki.outscale.net/display/EN/About+Keypairs,https://docs-beta.outscale.com/#3ds-outscale-api-keypair
+vpn_connection_route,a,VPN connection route,VPN connection routes,https://wiki.outscale.net/display/EN/About+Routing+Configuration+for+VPN+Connections,https://docs-beta.outscale.com/#3ds-outscale-api-vpnconnection
+nic,a,NIC,NICs,https://wiki.outscale.net/display/EN/About+FNIs,https://docs-beta.outscale.com/#3ds-outscale-api-nic
+nat_service,a,NAT service,NAT services,https://wiki.outscale.net/display/EN/About+NAT+Devices,https://docs-beta.outscale.com/#3ds-outscale-api-natservice
+flexible_gpu,a,flexible GPU,flexible GPUs,https://wiki.outscale.net/display/EN/About+Flexible+GPUs,https://docs-beta.outscale.com/#3ds-outscale-api-flexiblegpu
+vm_type,a,VM type,VM types,https://wiki.outscale.net/display/EN/Instance+Types,https://docs-beta.outscale.com/#readvmtypes
+vm_state,a,VM state,VM states,https://wiki.outscale.net/display/EN/About+Instance+Lifecycle,https://docs-beta.outscale.com/#readvmsstate
+product_type,a,product type,product types,?,https://docs-beta.outscale.com/#3ds-outscale-api-producttype
+quota,a,quota,quotas,https://wiki.outscale.net/display/EN/About+Your+3DS+OUTSCALE+Account#AboutYour3DSOUTSCALEAccount-quotasQuotasandConsumption,https://docs-beta.outscale.com/#3ds-outscale-api-quota
+load_balancer,a,load balancer,load balancer,https://wiki.outscale.net/display/EN/About+Load+Balancers,https://docs-beta.outscale.com/#3ds-outscale-api-loadbalancer
+load_balancer_listener,a,load balancer listener,load balancer listeners,?,https://docs-beta.outscale.com/#3ds-outscale-api-listener
+load_balancer_policy,a,load balancer policy,load balancer policies,?,https://docs-beta.outscale.com/#3ds-outscale-api-loadbalancerpolicy
