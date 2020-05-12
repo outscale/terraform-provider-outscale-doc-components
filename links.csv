@@ -1,4 +1,8 @@
 clés,articles (description),Forme complète (description),Forme complète plurielle (description),lien UG,LINK API
+access_key,an,access key, access keys,https://wiki.outscale.net/display/EN/About+Access+Keys,https://docs.outscale.com/api#3ds-outscale-api-accesskey
+client_gateway,a,client gateway,client gateways,https://wiki.outscale.net/display/EN/About+Customer+Gateways,https://docs.outscale.com/api#3ds-outscale-api-clientgateway
+dhcp_options,a,dhcp option, dhcp options,https://wiki.outscale.net/display/EN/About+DHCP+Options,https://docs.outscale.com/api#3ds-outscale-api-dhcpoption
+dhcp_options_link,a,dhcp options link, dhcp options links,https://wiki.outscale.net/display/EN/About+DHCP+Options,https://docs.outscale.com/api#updatenet
 flexible_gpu,a,flexible GPU,flexible GPUs,https://wiki.outscale.net/display/EN/About+Flexible+GPUs,https://docs.outscale.com/api#3ds-outscale-api-flexiblegpu
 image,an,image,images,https://wiki.outscale.net/display/EN/About+OMIs,https://docs.outscale.com/api#3ds-outscale-api-image
 internet_service,an,internet service,internet services,https://wiki.outscale.net/display/EN/About+Internet+Gateways,https://docs.outscale.com/api#3ds-outscale-api-internetservice
@@ -21,6 +25,9 @@ snapshot_export_task,a,snapshot export task,snapshot export tasks,https://wiki.o
 snapshot,a,snapshot,snapshots,https://wiki.outscale.net/display/EN/About+Snapshots,https://docs.outscale.com/api#3ds-outscale-api-snapshot
 subnet,a,subnet,subnets,https://wiki.outscale.net/display/EN/About+VPCs,https://docs.outscale.com/api#3ds-outscale-api-subnet
 tag,a,tag,tags,https://wiki.outscale.net/display/EN/About+Tags,https://docs.outscale.com/api#3ds-outscale-api-tag
+virtual_gateway, a,virtual gateway, virtual gateways,https://wiki.outscale.net/display/EN/About+Virtual+Private+Gateways,https://docs.outscale.com/api#3ds-outscale-api-virtualgateway
+virtual_gateway_link,a,virtual gateway link,virtual gateway links,https://wiki.outscale.net/display/EN/About+Virtual+Private+Gateways,https://docs.outscale.com/api#3ds-outscale-api-virtualgateway
+virtual_gateway_route_propagation,a,virtual gateway route propagation, virtual gateway route propagations,https://wiki.outscale.net/display/EN/About+Routing+Configuration+for+VPN+Connections,https://docs.outscale.com/api#3ds-outscale-api-virtualgateway
 vm_state,a,VM state,VM states,https://wiki.outscale.net/display/EN/About+Instance+Lifecycle,https://docs.outscale.com/api#readvmsstate
 vm_type,a,VM type,VM types,https://wiki.outscale.net/display/EN/Instance+Types,https://docs.outscale.com/api#readvmtypes
 vm,a,virtual machine (VM),virtual machines (VMs),https://wiki.outscale.net/display/EN/About+Instances,https://docs.outscale.com/api#3ds-outscale-api-vm
