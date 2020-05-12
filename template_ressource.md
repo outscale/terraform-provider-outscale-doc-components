@@ -11,13 +11,7 @@ description: |-
 Manages ARTICLE LITERAL_NAME.
 For more information on this resource, see the [User Guide](LINK_UG).
 For more information on this resource actions, see the [API documentation](LINK_API).
-
-## Example Usage
-
-```hcl
-[exemple de code]
-```
-
+EXAMPLE
 ## Argument Reference
 
 The following arguments are supported:
@@ -28,3 +22,4 @@ INPUT
 The following attributes are exported:
 
 OUTPUT
+IMPORT
