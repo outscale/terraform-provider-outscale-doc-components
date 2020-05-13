@@ -9,8 +9,8 @@ image,an,image,images,https://wiki.outscale.net/display/EN/About+OMIs,https://do
 internet_service_link,an,Internet service link,Internet service links,https://wiki.outscale.net/display/EN/About+Internet+Gateways,https://docs.outscale.com/api#3ds-outscale-api-internetservice
 internet_service,an,Internet service,Internet services,https://wiki.outscale.net/display/EN/About+Internet+Gateways,https://docs.outscale.com/api#3ds-outscale-api-internetservice
 keypair,a,keypair,keypairs,https://wiki.outscale.net/display/EN/About+Keypairs,https://docs.outscale.com/api#3ds-outscale-api-keypair
-load_balancer_listener,a,load balancer listener,load balancer listeners,?,https://docs.outscale.com/api#3ds-outscale-api-listener
-load_balancer_policy,a,load balancer policy,load balancer policies,?,https://docs.outscale.com/api#3ds-outscale-api-loadbalancerpolicy
+load_balancer_listener,a,load balancer listener,load balancer listeners,https://wiki.outscale.net/display/EN/About+Load+Balancers,https://docs.outscale.com/api#3ds-outscale-api-listener
+load_balancer_policy,a,load balancer policy,load balancer policies,https://wiki.outscale.net/display/EN/About+Load+Balancers,https://docs.outscale.com/api#3ds-outscale-api-loadbalancerpolicy
 load_balancer,a,load balancer,load balancers,https://wiki.outscale.net/display/EN/About+Load+Balancers,https://docs.outscale.com/api#3ds-outscale-api-loadbalancer
 nat_service,a,NAT service,NAT services,https://wiki.outscale.net/display/EN/About+NAT+Devices,https://docs.outscale.com/api#3ds-outscale-api-natservice
 net_attributes,a,Net attribute,Net attributes,https://wiki.outscale.net/display/EN/About+DHCP+Options,https://docs.outscale.com/api#3ds-outscale-api-net
@@ -23,10 +23,10 @@ nic,a,network interface card (NIC),network interface card (NICs),https://wiki.ou
 product_type,a,product type,product types,?,https://docs.outscale.com/api#3ds-outscale-api-producttype
 public_ip_link,a,public IP link,public IP links,https://wiki.outscale.net/display/EN/About+EIPs,https://docs.outscale.com/api#3ds-outscale-api-publicip
 public_ip,a,public IP,public IPs,https://wiki.outscale.net/display/EN/About+EIPs,https://docs.outscale.com/api#3ds-outscale-api-publicip
-quota,a,quota,quotas,https://wiki.outscale.net/display/EN/About+Your+3DS+OUTSCALE+Account#AboutYour3DSOUTSCALEAccount-quotasQuotasandConsumption,https://docs.outscale.com/api#3ds-outscale-api-quota
+quota,a,quota,quotas,https://wiki.outscale.net/display/EN/About+Your+3DS+OUTSCALE+Account,https://docs.outscale.com/api#3ds-outscale-api-quota
 route_table_link,a,route table link,route table links,https://wiki.outscale.net/display/EN/About+Route+Tables,https://docs.outscale.com/api#3ds-outscale-api-routetable
 route_table,a,route table,route tables,https://wiki.outscale.net/display/EN/About+Route+Tables,https://docs.outscale.com/api#3ds-outscale-api-routetable
-route,a,route,routes,https://wiki.outscale.net/display/EN/About+Route+Tables#AboutRouteTables-RoutesRoutesandRoutingOptions,https://docs.outscale.com/api#3ds-outscale-api-route
+route,a,route,routes,https://wiki.outscale.net/display/EN/About+Route+Tables,https://docs.outscale.com/api#3ds-outscale-api-route
 security_group_rule,a,security group rule,security group rules,https://wiki.outscale.net/display/EN/About+Security+Group+Rules,https://docs.outscale.com/api#3ds-outscale-api-securitygrouprule
 security_group,a,security group,security groups,https://wiki.outscale.net/display/EN/About+Security+Groups,https://docs.outscale.com/api#3ds-outscale-api-securitygroup
 snapshot_attributes,a,snapshot attribute,snapshot attributes,https://wiki.outscale.net/display/EN/About+Snapshots,https://docs.outscale.com/api#3ds-outscale-api-snapshot
@@ -37,10 +37,10 @@ tag,a,tag,tags,https://wiki.outscale.net/display/EN/About+Tags,https://docs.outs
 virtual_gateway_link,a,virtual gateway link,virtual gateway links,https://wiki.outscale.net/display/EN/About+Virtual+Private+Gateways,https://docs.outscale.com/api#3ds-outscale-api-virtualgateway
 virtual_gateway_route_propagation,a,virtual gateway route propagation,virtual gateway route propagations,https://wiki.outscale.net/display/EN/About+Routing+Configuration+for+VPN+Connections,https://docs.outscale.com/api#3ds-outscale-api-virtualgateway
 virtual_gateway,a,virtual gateway,virtual gateways,https://wiki.outscale.net/display/EN/About+Virtual+Private+Gateways,https://docs.outscale.com/api#3ds-outscale-api-virtualgateway
-vm_state,a,VM state,VM states,https://wiki.outscale.net/display/EN/About+Instance+Lifecycle,https://docs.outscale.com/api#readvmsstate
-vm_type,a,VM type,VM types,https://wiki.outscale.net/display/EN/Instance+Types,https://docs.outscale.com/api#readvmtypes
+vm_state,a,VM state,VM states,https://wiki.outscale.net/display/EN/About+Instance+Lifecycle,https://docs.outscale.com/api#3ds-outscale-api-vm
+vm_type,a,VM type,VM types,https://wiki.outscale.net/display/EN/Instance+Types,https://docs.outscale.com/api#3ds-outscale-api-vm
 vm,a,virtual machine (VM),virtual machines (VMs),https://wiki.outscale.net/display/EN/About+Instances,https://docs.outscale.com/api#3ds-outscale-api-vm
-vms_state,a,VM state,VM states,https://wiki.outscale.net/display/EN/About+Instance+Lifecycle,https://docs.outscale.com/api#readvmsstate
+vms_state,a,VM state,VM states,https://wiki.outscale.net/display/EN/About+Instance+Lifecycle,https://docs.outscale.com/api#3ds-outscale-api-vm
 volume_link,a,volume link,volume links,https://wiki.outscale.net/display/EN/About+Volumes,https://docs.outscale.com/api#3ds-outscale-api-volume
 volume,a,volume,volumes,https://wiki.outscale.net/display/EN/About+Volumes,https://docs.outscale.com/api#3ds-outscale-api-volume
 vpn_connection_route,a,VPN connection route,VPN connection routes,https://wiki.outscale.net/display/EN/About+Routing+Configuration+for+VPN+Connections,https://docs.outscale.com/api#3ds-outscale-api-vpnconnection
