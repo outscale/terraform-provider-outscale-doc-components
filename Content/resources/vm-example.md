@@ -11,6 +11,11 @@ resource "outscale_vm" "vm01" {
     key   = "name"
     value = "terraform-public-vm"
   }
+  user_data                = base64encode(<<EOT
+# content
+# content
+EOT
+  )
 }
 
 # Create a VM with block device mappings
@@ -21,7 +26,7 @@ resource "outscale_vm" "vm02" {
   keypair_name            = var.keypair_name
   block_device_mappings {
     device_name = "/dev/sdb"
-    bsu         = {
+    bsu  {
       volume_size = 15
       volume_type = "gp2"
       snapshot_id = var.snapshot_id
@@ -29,7 +34,7 @@ resource "outscale_vm" "vm02" {
   }  
   block_device_mappings {
     device_name = "/dev/sdc"
-    bsu         = {
+    bsu  {
       volume_size           = 22
       volume_type           = "io1"
       iops                  = 150
