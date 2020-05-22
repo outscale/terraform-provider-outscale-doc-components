@@ -1,7 +1,7 @@
 # Set rule from IP range
 
 resource "outscale_security_group" "security_group01" {
-  description         = "Terraform security group for rule"
+  description         = "Terraform security group for sg rule"
   security_group_name = "terraform-security-group-test-01"
 }
 
@@ -17,32 +17,24 @@ resource "outscale_security_group_rule" "security_group_rule01" {
 # Set rule from another security group
 
 resource "outscale_security_group" "security_group02" {
-    description         = "test group"
-    security_group_name = "sg1-terraform-test"
-    tags {
-        key   = "Name"
-        value = "outscale_sg"
-    }
+    description         = "Terraform security group for sg rule"
+    security_group_name = "terraform-security-group-test-02"
 }
 
 resource "outscale_security_group" "security_group03" {
-    description         = "test group"
-    security_group_name = "sg2-terraform-test"
-    tags {
-        key   = "Name"
-        value = "outscale_sg2"
-    }
+    description         = "Terraform security group for sg rule"
+    security_group_name = "terraform-security-group-test-03"
 }
 
 resource "outscale_security_group_rule" "security_group_rule02" 
-     flow              = "Inbound"
+    flow              = "Inbound"
     security_group_id = outscale_security_group.security_group02.security_group_id
     rules {
      from_port_range   = "22"
      to_port_range     = "22"
      ip_protocol       = "tcp"
-      security_groups_members {
-           account_id =  "012345678910"
-           security_group_name = outscale_security_group.security_group02.security_group_name
+     security_groups_members {
+        account_id          =  "012345678910"
+        security_group_name = outscale_security_group.security_group03.security_group_name
        }
      }
