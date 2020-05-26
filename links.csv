@@ -2,7 +2,7 @@ clés,articles (description),Forme complète (description),Forme complète pluri
 access_key,an,access key,access keys,https://wiki.outscale.net/display/EN/About+Access+Keys,https://docs.outscale.com/api#3ds-outscale-api-accesskey
 client_gateway,a,client gateway,client gateways,https://wiki.outscale.net/display/EN/About+Customer+Gateways,https://docs.outscale.com/api#3ds-outscale-api-clientgateway
 dhcp_options_link,a,DHCP options link,DHCP options links,https://wiki.outscale.net/display/EN/About+DHCP+Options,https://docs.outscale.com/api#updatenet
-dhcp_options,a,DHCP option,DHCP options,https://wiki.outscale.net/display/EN/About+DHCP+Options,https://docs.outscale.com/api#3ds-outscale-api-dhcpoption
+dhcp_option,a,DHCP option,DHCP options,https://wiki.outscale.net/display/EN/About+DHCP+Options,https://docs.outscale.com/api#3ds-outscale-api-dhcpoption
 flexible_gpu,a,flexible GPU,flexible GPUs,https://wiki.outscale.net/display/EN/About+Flexible+GPUs,https://docs.outscale.com/api#3ds-outscale-api-flexiblegpu
 image_launch_permission,an,image launch permission,image launch permissions,https://wiki.outscale.net/display/EN/About+OMIs,https://docs.outscale.com/api#3ds-outscale-api-image
 image,an,image,images,https://wiki.outscale.net/display/EN/About+OMIs,https://docs.outscale.com/api#3ds-outscale-api-image
