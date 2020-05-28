@@ -1,7 +1,6 @@
 clés,articles (description),Forme complète (description),Forme complète plurielle (description),lien UG,LINK API
 access_key,an,access key,access keys,https://wiki.outscale.net/display/EN/About+Access+Keys,https://docs.outscale.com/api#3ds-outscale-api-accesskey
 client_gateway,a,client gateway,client gateways,https://wiki.outscale.net/display/EN/About+Customer+Gateways,https://docs.outscale.com/api#3ds-outscale-api-clientgateway
-dhcp_options_link,a,DHCP options link,DHCP options links,https://wiki.outscale.net/display/EN/About+DHCP+Options,https://docs.outscale.com/api#updatenet
 dhcp_option,a,DHCP option,DHCP options,https://wiki.outscale.net/display/EN/About+DHCP+Options,https://docs.outscale.com/api#3ds-outscale-api-dhcpoption
 flexible_gpu,a,flexible GPU,flexible GPUs,https://wiki.outscale.net/display/EN/About+Flexible+GPUs,https://docs.outscale.com/api#3ds-outscale-api-flexiblegpu
 image_launch_permission,an,image launch permission,image launch permissions,https://wiki.outscale.net/display/EN/About+OMIs,https://docs.outscale.com/api#3ds-outscale-api-image
@@ -13,8 +12,9 @@ load_balancer_listener,a,load balancer listener,load balancer listeners,https://
 load_balancer_policy,a,load balancer policy,load balancer policies,https://wiki.outscale.net/display/EN/About+Load+Balancers,https://docs.outscale.com/api#3ds-outscale-api-loadbalancerpolicy
 load_balancer,a,load balancer,load balancers,https://wiki.outscale.net/display/EN/About+Load+Balancers,https://docs.outscale.com/api#3ds-outscale-api-loadbalancer
 nat_service,a,NAT service,NAT services,https://wiki.outscale.net/display/EN/About+NAT+Devices,https://docs.outscale.com/api#3ds-outscale-api-natservice
+net_attribute,a,Net attribute,Net attributes,https://wiki.outscale.net/display/EN/About+DHCP+Options,https://docs.outscale.com/api#3ds-outscale-api-net
 net_attributes,a,Net attribute,Net attributes,https://wiki.outscale.net/display/EN/About+DHCP+Options,https://docs.outscale.com/api#3ds-outscale-api-net
-net_peering_acception,a,Net peering acception,Net peering acceptions,https://wiki.outscale.net/display/EN/About+VPC+Peering+Connections,https://docs.outscale.com/api#3ds-outscale-api-netpeering
+net_peering_acceptation,a,Net peering acception,Net peering acceptions,https://wiki.outscale.net/display/EN/About+VPC+Peering+Connections,https://docs.outscale.com/api#3ds-outscale-api-netpeering
 net_peering,a,Net peering,Net peerings,https://wiki.outscale.net/display/EN/About+VPC+Peering+Connections,https://docs.outscale.com/api#3ds-outscale-api-netpeering
 net,a,Net,Nets,https://wiki.outscale.net/display/EN/About+VPCs,https://docs.outscale.com/api#3ds-outscale-api-net
 nic_link,a,NIC link,NIC links,https://wiki.outscale.net/display/EN/About+FNIs,https://docs.outscale.com/api#3ds-outscale-api-nic
@@ -34,6 +34,7 @@ snapshot_export_task,a,snapshot export task,snapshot export tasks,https://wiki.o
 snapshot,a,snapshot,snapshots,https://wiki.outscale.net/display/EN/About+Snapshots,https://docs.outscale.com/api#3ds-outscale-api-snapshot
 subnet,a,Subnet,Subnets,https://wiki.outscale.net/display/EN/About+VPCs,https://docs.outscale.com/api#3ds-outscale-api-subnet
 tag,a,tag,tags,https://wiki.outscale.net/display/EN/About+Tags,https://docs.outscale.com/api#3ds-outscale-api-tag
+tags,a,tag,tags,https://wiki.outscale.net/display/EN/About+Tags,https://docs.outscale.com/api#3ds-outscale-api-tag
 virtual_gateway_link,a,virtual gateway link,virtual gateway links,https://wiki.outscale.net/display/EN/About+Virtual+Private+Gateways,https://docs.outscale.com/api#3ds-outscale-api-virtualgateway
 virtual_gateway_route_propagation,a,virtual gateway route propagation,virtual gateway route propagations,https://wiki.outscale.net/display/EN/About+Routing+Configuration+for+VPN+Connections,https://docs.outscale.com/api#3ds-outscale-api-virtualgateway
 virtual_gateway,a,virtual gateway,virtual gateways,https://wiki.outscale.net/display/EN/About+Virtual+Private+Gateways,https://docs.outscale.com/api#3ds-outscale-api-virtualgateway
