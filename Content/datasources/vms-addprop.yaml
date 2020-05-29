@@ -1,0 +1,18 @@
+argument:
+  add:
+    toto: Description of new toto parameter
+    filters.titi: Description of new titi parameter
+    tutu: Description of new tutu parameter
+    tutu.tete: Description of new tutu.tete parameter
+    tutu.tete.tyty: Description of new tutu.tete.tyty parameter
+  rename:
+    filters.tag_values: tag_titi
+  remove:
+    - filters.tags
+attribute:
+  add:
+    toto: desciption
+  rename:
+    vms.block_device_mappings: block_device_mappings_created
+  remove:
+    - vms.nics
