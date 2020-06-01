@@ -92,3 +92,11 @@
  outscale/resource_outscale_volume.go, CreateVolume, DeleteVolume, ReadVolumes
  outscale/resource_outscale_volume_link.go, LinkVolume, ReadVolumes, UnlinkVolume
  outscale/resource_outscale_volume_test.go, ReadVolumes
+ outscale/data_source_outscale_vpn_connection.go, ReadVpnConnections
+ outscale/data_source_outscale_vpn_connection_test.go, ReadVpnConnections
+ outscale/data_source_outscale_vpn_connections.go, ReadVpnConnections
+ outscale/data_source_outscale_vpn_connections_test.go, ReadVpnConnections
+ outscale/resource_outscale_vpn_connection.go, CreateVpnConnection, DeleteVpnConnection, ReadVpnConnections
+ outscale/resource_outscale_vpn_connection_route.go, CreateVpnConnectionRoute, DeleteVpnConnectionRoute, ReadVpnConnections
+ outscale/resource_outscale_vpn_connection_route_test.go, ReadVpnConnections
+ outscale/resource_outscale_vpn_connection_test.go, ReadVpnConnections
