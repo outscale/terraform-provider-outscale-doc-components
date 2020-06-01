@@ -1,5 +1,9 @@
+ outscale/data_source_outscale_access_key.go, ReadAccessKeys
+ outscale/data_source_outscale_access_keys.go, ReadAccessKeys
  outscale/data_source_outscale_client_gateway.go, ReadClientGateways
  outscale/data_source_outscale_client_gateways.go, ReadClientGateways
+ outscale/data_source_outscale_dhcp_option.go, ReadDhcpOptions
+ outscale/data_source_outscale_dhcp_options.go, ReadDhcpOptions
  outscale/data_source_outscale_image.go, ReadImages
  outscale/data_source_outscale_images.go, ReadImages
  outscale/data_source_outscale_internet_service.go, ReadInternetServices
@@ -38,7 +42,9 @@
  outscale/data_source_outscale_vpn_connection.go, ReadVpnConnections
  outscale/data_source_outscale_vpn_connections.go, ReadVpnConnections
  outscale/oapi_tags.go, CreateTags, DeleteTags
+ outscale/resource_outscale_access_key.go, CreateAccessKey, DeleteAccessKey, UpdateAccessKey, ReadAccessKeys, ReadSecretAccessKey
  outscale/resource_outscale_client_gateway.go, CreateClientGateway, DeleteClientGateway, ReadClientGateways
+ outscale/resource_outscale_dhcp_option.go, CreateDhcpOptions, DeleteDhcpOptions, ReadDhcpOptions
  outscale/resource_outscale_image_launch_permission.go, ReadImages, UpdateImage
  outscale/resource_outscale_image.go, CreateImage, DeleteImage, ReadImages, UpdateImage
  outscale/resource_outscale_internet_service_link.go, LinkInternetService, ReadInternetServices, UnlinkInternetService
