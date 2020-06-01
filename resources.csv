@@ -57,7 +57,7 @@
  outscale/resource_outscale_net.go, CreateNet, DeleteNet, ReadNets
  outscale/resource_outscale_nic_link.go, LinkNic, ReadNics, UnlinkNic
  outscale/resource_outscale_nic_private_ip.go, LinkPrivateIps, ReadNics, UnlinkPrivateIps
- outscale/resource_outscale_nic.go, CreateNic, DeleteNic, LinkNic, LinkPrivateIps, ReadNics, UnlinkNic, UnlinkPrivateIps, UpdateNic
+ outscale/resource_outscale_nic.go, CreateNic, DeleteNic, ReadNics, UpdateNic
  outscale/resource_outscale_public_ip_link.go, LinkPublicIp, ReadPublicIps, UnlinkPublicIp
  outscale/resource_outscale_public_ip.go, CreatePublicIp, DeletePublicIp, LinkPublicIp, ReadPublicIps, UnlinkPublicIp
  outscale/resource_outscale_route_table_link.go, LinkRouteTable, ReadRouteTables, UnlinkRouteTable
