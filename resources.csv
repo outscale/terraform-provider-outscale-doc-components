@@ -42,38 +42,38 @@
  outscale/data_source_outscale_vpn_connection.go, ReadVpnConnections
  outscale/data_source_outscale_vpn_connections.go, ReadVpnConnections
  outscale/oapi_tags.go, CreateTags, DeleteTags
- outscale/resource_outscale_access_key.go, CreateAccessKey, DeleteAccessKey, UpdateAccessKey, ReadAccessKeys, ReadSecretAccessKey
- outscale/resource_outscale_client_gateway.go, CreateClientGateway, DeleteClientGateway, ReadClientGateways
- outscale/resource_outscale_dhcp_option.go, CreateDhcpOptions, DeleteDhcpOptions, ReadDhcpOptions
- outscale/resource_outscale_image_launch_permission.go, ReadImages, UpdateImage
- outscale/resource_outscale_image.go, CreateImage, DeleteImage, ReadImages, UpdateImage
- outscale/resource_outscale_internet_service_link.go, LinkInternetService, ReadInternetServices, UnlinkInternetService
- outscale/resource_outscale_internet_service.go, CreateInternetService, DeleteInternetService, ReadInternetServices
- outscale/resource_outscale_keypair.go, CreateKeypair, DeleteKeypair, ReadKeypairs
- outscale/resource_outscale_nat_service.go, CreateNatService, DeleteNatService, ReadNatServices
- outscale/resource_outscale_net_attributes.go, ReadNets, UpdateNet
+ outscale/resource_outscale_access_key.go, CreateAccessKey, DeleteAccessKey, UpdateAccessKey
+ outscale/resource_outscale_client_gateway.go, CreateClientGateway, DeleteClientGateway
+ outscale/resource_outscale_dhcp_option.go, CreateDhcpOptions, DeleteDhcpOptions
+ outscale/resource_outscale_image_launch_permission.go, UpdateImage
+ outscale/resource_outscale_image.go, CreateImage, DeleteImage, UpdateImage
+ outscale/resource_outscale_internet_service_link.go, LinkInternetService, UnlinkInternetService
+ outscale/resource_outscale_internet_service.go, CreateInternetService, DeleteInternetService
+ outscale/resource_outscale_keypair.go, CreateKeypair, DeleteKeypair
+ outscale/resource_outscale_nat_service.go, CreateNatService, DeleteNatService
+ outscale/resource_outscale_net_attributes.go, UpdateNet
  outscale/resource_outscale_net_peering_acceptation.go, AcceptNetPeering
- outscale/resource_outscale_net_peering.go, CreateNetPeering, DeleteNetPeering, ReadNetPeerings
- outscale/resource_outscale_net.go, CreateNet, DeleteNet, ReadNets
- outscale/resource_outscale_nic_link.go, LinkNic, ReadNics, UnlinkNic
- outscale/resource_outscale_nic_private_ip.go, LinkPrivateIps, ReadNics, UnlinkPrivateIps
- outscale/resource_outscale_nic.go, CreateNic, DeleteNic, ReadNics, UpdateNic
- outscale/resource_outscale_public_ip_link.go, LinkPublicIp, ReadPublicIps, UnlinkPublicIp
- outscale/resource_outscale_public_ip.go, CreatePublicIp, DeletePublicIp, LinkPublicIp, ReadPublicIps, UnlinkPublicIp
- outscale/resource_outscale_route_table_link.go, LinkRouteTable, ReadRouteTables, UnlinkRouteTable
- outscale/resource_outscale_route_table.go, CreateRouteTable, DeleteRouteTable, ReadRouteTables, UnlinkRouteTable
- outscale/resource_outscale_route.go, CreateRoute, DeleteRoute, ReadRouteTables, UpdateRoute
- outscale/resource_outscale_security_group_rule.go, CreateSecurityGroupRule, DeleteSecurityGroupRule, ReadSecurityGroups
- outscale/resource_outscale_security_group.go, CreateSecurityGroup, DeleteSecurityGroup, ReadSecurityGroups
- outscale/resource_outscale_snapshot_attributes.go, ReadSnapshots, UpdateSnapshot
- outscale/resource_outscale_snapshot.go, CreateSnapshot, DeleteSnapshot, ReadSnapshots
- outscale/resource_outscale_subnet.go, CreateSubnet, DeleteSubnet, ReadSubnets
- outscale/resource_outscale_tags.go, CreateTags, DeleteTags, ReadTags
- outscale/resource_outscale_virtual_gateway_link.go, LinkVirtualGateway, ReadVirtualGateways, UnlinkVirtualGateway
- outscale/resource_outscale_virtual_gateway_route_propagation.go, ReadRouteTables, UpdateRoutePropagation
- outscale/resource_outscale_virtual_gateway.go, CreateVirtualGateway, DeleteVirtualGateway, ReadVirtualGateways
- outscale/resource_outscale_vm.go, CreateVms, DeleteVms, ReadAdminPassword, ReadVms, StartVms, StopVms, UpdateVm
- outscale/resource_outscale_volume_link.go, LinkVolume, ReadVolumes, UnlinkVolume
- outscale/resource_outscale_volume.go, CreateVolume, DeleteVolume, ReadVolumes
- outscale/resource_outscale_vpn_connection_route.go, CreateVpnConnectionRoute, DeleteVpnConnectionRoute, ReadVpnConnections
- outscale/resource_outscale_vpn_connection.go, CreateVpnConnection, DeleteVpnConnection, ReadVpnConnections
+ outscale/resource_outscale_net_peering.go, CreateNetPeering, DeleteNetPeering
+ outscale/resource_outscale_net.go, CreateNet, DeleteNet
+ outscale/resource_outscale_nic_link.go, LinkNic, UnlinkNic
+ outscale/resource_outscale_nic_private_ip.go, LinkPrivateIps, UnlinkPrivateIps
+ outscale/resource_outscale_nic.go, CreateNic, DeleteNic, UpdateNic
+ outscale/resource_outscale_public_ip_link.go, LinkPublicIp, UnlinkPublicIp
+ outscale/resource_outscale_public_ip.go, CreatePublicIp, DeletePublicIp, LinkPublicIp, UnlinkPublicIp
+ outscale/resource_outscale_route_table_link.go, LinkRouteTable, UnlinkRouteTable
+ outscale/resource_outscale_route_table.go, CreateRouteTable, DeleteRouteTable, UnlinkRouteTable
+ outscale/resource_outscale_route.go, CreateRoute, DeleteRoute, UpdateRoute
+ outscale/resource_outscale_security_group_rule.go, CreateSecurityGroupRule, DeleteSecurityGroupRule
+ outscale/resource_outscale_security_group.go, CreateSecurityGroup, DeleteSecurityGroup
+ outscale/resource_outscale_snapshot_attributes.go, UpdateSnapshot
+ outscale/resource_outscale_snapshot.go, CreateSnapshot, DeleteSnapshot
+ outscale/resource_outscale_subnet.go, CreateSubnet, DeleteSubnet
+ outscale/resource_outscale_tags.go, CreateTags, DeleteTags
+ outscale/resource_outscale_virtual_gateway_link.go, LinkVirtualGateway, UnlinkVirtualGateway
+ outscale/resource_outscale_virtual_gateway_route_propagation.go, UpdateRoutePropagation
+ outscale/resource_outscale_virtual_gateway.go, CreateVirtualGateway, DeleteVirtualGateway
+ outscale/resource_outscale_vm.go, CreateVms, DeleteVms, StartVms, StopVms, UpdateVm
+ outscale/resource_outscale_volume_link.go, LinkVolume, UnlinkVolume
+ outscale/resource_outscale_volume.go, CreateVolume, DeleteVolume
+ outscale/resource_outscale_vpn_connection_route.go, CreateVpnConnectionRoute, DeleteVpnConnectionRoute
+ outscale/resource_outscale_vpn_connection.go, CreateVpnConnection, DeleteVpnConnection
