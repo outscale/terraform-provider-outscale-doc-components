@@ -13,7 +13,6 @@
  outscale/data_source_outscale_net_peerings.go, ReadNetPeerings
  outscale/data_source_outscale_net.go, ReadNets
  outscale/data_source_outscale_nets.go, ReadNets
- outscale/data_source_outscale_nic_test.go, ReadNics
  outscale/data_source_outscale_nic.go, ReadNics
  outscale/data_source_outscale_nics.go, ReadNics
  outscale/data_source_outscale_public_ip.go, ReadPublicIps
@@ -36,67 +35,39 @@
  outscale/data_source_outscale_vms.go, ReadVms
  outscale/data_source_outscale_volume.go, ReadVolumes
  outscale/data_source_outscale_volumes.go, ReadVolumes
- outscale/data_source_outscale_vpn_connection_test.go, ReadVpnConnections
  outscale/data_source_outscale_vpn_connection.go, ReadVpnConnections
- outscale/data_source_outscale_vpn_connections_test.go, ReadVpnConnections
  outscale/data_source_outscale_vpn_connections.go, ReadVpnConnections
  outscale/oapi_tags.go, CreateTags, DeleteTags
- outscale/resource_outscale_client_gateway_test.go, ReadClientGateways
  outscale/resource_outscale_client_gateway.go, CreateClientGateway, DeleteClientGateway, ReadClientGateways
- outscale/resource_outscale_image_launch_permission_test.go, DeleteImage
  outscale/resource_outscale_image_launch_permission.go, ReadImages, UpdateImage
- outscale/resource_outscale_image_test.go, ReadImages
  outscale/resource_outscale_image.go, CreateImage, DeleteImage, ReadImages, UpdateImage
- outscale/resource_outscale_internet_service_link_test.go, ReadInternetServices
  outscale/resource_outscale_internet_service_link.go, LinkInternetService, ReadInternetServices, UnlinkInternetService
- outscale/resource_outscale_internet_service_test.go, ReadInternetServices
  outscale/resource_outscale_internet_service.go, CreateInternetService, DeleteInternetService, ReadInternetServices
- outscale/resource_outscale_keypair_test.go, ReadKeypairs
  outscale/resource_outscale_keypair.go, CreateKeypair, DeleteKeypair, ReadKeypairs
- outscale/resource_outscale_nat_service_test.go, ReadNatServices
  outscale/resource_outscale_nat_service.go, CreateNatService, DeleteNatService, ReadNatServices
  outscale/resource_outscale_net_attributes.go, ReadNets, UpdateNet
  outscale/resource_outscale_net_peering_acceptation.go, AcceptNetPeering
- outscale/resource_outscale_net_peering_test.go, DeleteNetPeering, ReadNetPeerings
  outscale/resource_outscale_net_peering.go, CreateNetPeering, DeleteNetPeering, ReadNetPeerings
- outscale/resource_outscale_net_test.go, ReadNets
  outscale/resource_outscale_net.go, CreateNet, DeleteNet, ReadNets
  outscale/resource_outscale_nic_link.go, LinkNic, ReadNics, UnlinkNic
  outscale/resource_outscale_nic_private_ip.go, LinkPrivateIps, ReadNics, UnlinkPrivateIps
- outscale/resource_outscale_nic_test.go, ReadNics
  outscale/resource_outscale_nic.go, CreateNic, DeleteNic, LinkNic, LinkPrivateIps, ReadNics, UnlinkNic, UnlinkPrivateIps, UpdateNic
- outscale/resource_outscale_public_ip_link_test.go, ReadPublicIps
  outscale/resource_outscale_public_ip_link.go, LinkPublicIp, ReadPublicIps, UnlinkPublicIp
- outscale/resource_outscale_public_ip_test.go, ReadPublicIps
  outscale/resource_outscale_public_ip.go, CreatePublicIp, DeletePublicIp, LinkPublicIp, ReadPublicIps, UnlinkPublicIp
- outscale/resource_outscale_route_table_link_test.go, ReadRouteTables
  outscale/resource_outscale_route_table_link.go, LinkRouteTable, ReadRouteTables, UnlinkRouteTable
- outscale/resource_outscale_route_table_test.go, ReadRouteTables
  outscale/resource_outscale_route_table.go, CreateRouteTable, DeleteRouteTable, ReadRouteTables, UnlinkRouteTable
  outscale/resource_outscale_route.go, CreateRoute, DeleteRoute, ReadRouteTables, UpdateRoute
- outscale/resource_outscale_security_group_rule_test.go, ReadSecurityGroups
  outscale/resource_outscale_security_group_rule.go, CreateSecurityGroupRule, DeleteSecurityGroupRule, ReadSecurityGroups
- outscale/resource_outscale_security_group_test.go, ReadSecurityGroups
  outscale/resource_outscale_security_group.go, CreateSecurityGroup, DeleteSecurityGroup, ReadSecurityGroups
  outscale/resource_outscale_snapshot_attributes.go, ReadSnapshots, UpdateSnapshot
- outscale/resource_outscale_snapshot_test.go, ReadSnapshots
  outscale/resource_outscale_snapshot.go, CreateSnapshot, DeleteSnapshot, ReadSnapshots
- outscale/resource_outscale_subnet_test.go, ReadSubnets
  outscale/resource_outscale_subnet.go, CreateSubnet, DeleteSubnet, ReadSubnets
- outscale/resource_outscale_tags_test.go, ReadVms
  outscale/resource_outscale_tags.go, CreateTags, DeleteTags, ReadTags
- outscale/resource_outscale_virtual_gateway_link_test.go, ReadVirtualGateways
  outscale/resource_outscale_virtual_gateway_link.go, LinkVirtualGateway, ReadVirtualGateways, UnlinkVirtualGateway
- outscale/resource_outscale_virtual_gateway_route_propagation_test.go, DeleteVirtualGateway, ReadVirtualGateways
  outscale/resource_outscale_virtual_gateway_route_propagation.go, ReadRouteTables, UpdateRoutePropagation
- outscale/resource_outscale_virtual_gateway_test.go, DeleteVirtualGateway, ReadVirtualGateways
  outscale/resource_outscale_virtual_gateway.go, CreateVirtualGateway, DeleteVirtualGateway, ReadVirtualGateways
- outscale/resource_outscale_vm_test.go, ReadVms
  outscale/resource_outscale_vm.go, CreateVms, DeleteVms, ReadAdminPassword, ReadVms, StartVms, StopVms, UpdateVm
  outscale/resource_outscale_volume_link.go, LinkVolume, ReadVolumes, UnlinkVolume
- outscale/resource_outscale_volume_test.go, ReadVolumes
  outscale/resource_outscale_volume.go, CreateVolume, DeleteVolume, ReadVolumes
- outscale/resource_outscale_vpn_connection_route_test.go, ReadVpnConnections
  outscale/resource_outscale_vpn_connection_route.go, CreateVpnConnectionRoute, DeleteVpnConnectionRoute, ReadVpnConnections
- outscale/resource_outscale_vpn_connection_test.go, ReadVpnConnections
  outscale/resource_outscale_vpn_connection.go, CreateVpnConnection, DeleteVpnConnection, ReadVpnConnections
