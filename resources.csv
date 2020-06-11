@@ -41,7 +41,6 @@
  outscale/data_source_outscale_volumes.go, ReadVolumes
  outscale/data_source_outscale_vpn_connection.go, ReadVpnConnections
  outscale/data_source_outscale_vpn_connections.go, ReadVpnConnections
- outscale/oapi_tags.go, CreateTags
  outscale/resource_outscale_access_key.go, CreateAccessKey
  outscale/resource_outscale_client_gateway.go, CreateClientGateway
  outscale/resource_outscale_dhcp_option.go, CreateDhcpOptions
