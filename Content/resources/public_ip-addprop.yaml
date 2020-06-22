@@ -1,5 +1,5 @@
 argument:
   add:
     tags: A tag to add to this resource. You can specify this argument several times.
-      tags.key: The key of the tag, with a minimum of 1 character.
-      tags.value: The value of the tag, between 0 and 255 characters.
+    tags.key: The key of the tag, with a minimum of 1 character.
+    tags.value: The value of the tag, between 0 and 255 characters.
