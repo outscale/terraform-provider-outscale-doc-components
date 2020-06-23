@@ -1,0 +1,6 @@
+argument:
+  remove:
+    - access_key_id
+attributes:
+  remove:
+    - access_key
