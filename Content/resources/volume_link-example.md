@@ -10,7 +10,7 @@
 #	security_group_ids = [var.security_group_id]
 #}
 
-resource "outscale_volumes_link" "volumes_link01" {
+resource "outscale_volume_link" "volume_link01" {
 	device_name = "/dev/xvdc"
 	volume_id   = outscale_volume.volume01.id
 	vm_id       = outscale_vm.vm01.id
