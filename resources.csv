@@ -10,6 +10,13 @@
  outscale/data_source_outscale_internet_services.go, ReadInternetServices
  outscale/data_source_outscale_keypair.go, ReadKeypairs
  outscale/data_source_outscale_keypairs.go, ReadKeypairs
+ outscale/data_source_outscale_load_balancer_listener_rule.go, ReadListenerRules
+ outscale/data_source_outscale_load_balancer_listener_rules.go, ReadListenerRules
+ outscale/data_source_outscale_load_balancer_vm_health.go, ReadVmsHealth
+ outscale/data_source_outscale_load_balancer.go, ReadLoadBalancers
+ outscale/data_source_outscale_load_balancers.go, ReadLoadBalancers
+ outscale/data_source_outscale_load_balancer_listener_rule.go, ReadListenerRules
+ outscale/data_source_outscale_load_balancer_listener_rules.go, ReadListenerRules
  outscale/data_source_outscale_nat_service.go, ReadNatServices
  outscale/data_source_outscale_nat_services.go, ReadNatServices
  outscale/data_source_outscale_net_attributes.go, ReadNets
@@ -34,8 +41,8 @@
  outscale/data_source_outscale_virtual_gateway.go, ReadVirtualGateways
  outscale/data_source_outscale_virtual_gateways.go, ReadVirtualGateways
  outscale/data_source_outscale_vm_state.go, ReadVmsState
+ outscale/data_source_outscale_vm_states.go, ReadVmsState
  outscale/data_source_outscale_vm.go, ReadVms
- outscale/data_source_outscale_vms_state.go, ReadVmsState
  outscale/data_source_outscale_vms.go, ReadVms
  outscale/data_source_outscale_volume.go, ReadVolumes
  outscale/data_source_outscale_volumes.go, ReadVolumes
@@ -49,6 +56,11 @@
  outscale/resource_outscale_internet_service_link.go, LinkInternetService
  outscale/resource_outscale_internet_service.go, CreateInternetService
  outscale/resource_outscale_keypair.go, CreateKeypair
+ outscale/resource_outscale_load_balancer_attributes.go, UpdateLoadBalancer
+ outscale/resource_outscale_load_balancer_listener_rule.go, CreateListenerRule
+ outscale/resource_outscale_load_balancer_policy.go, CreateLoadBalancerPolicy
+ outscale/resource_outscale_load_balancer_vms.go, RegisterVmsInLoadBalancer
+ outscale/resource_outscale_load_balancer.go, CreateLoadBalancer
  outscale/resource_outscale_nat_service.go, CreateNatService
  outscale/resource_outscale_net_attributes.go, UpdateNet
  outscale/resource_outscale_net_peering_acceptation.go, AcceptNetPeering
