@@ -1,5 +1,6 @@
-# Create a VM in the Public Cloud
+### Create a VM in the Public Cloud
 
+```hcl
 resource "outscale_vm" "vm01" {
   image_id                 = var.image_id
   vm_type                  = var.vm_type
@@ -16,9 +17,11 @@ resource "outscale_vm" "vm01" {
 EOF
   )
 }
+```
 
-# Create a VM with block device mappings
+### Create a VM with block device mappings
 
+```hcl
 resource "outscale_vm" "vm02" {
   image_id                = var.image_id
   vm_type                 = var.vm_type
@@ -41,9 +44,11 @@ resource "outscale_vm" "vm02" {
     }
   }
 }
+```
 
-# Create a VM in the Private Cloud
+### Create a VM in the Private Cloud
 
+```hcl
 resource "outscale_net" "net01" {
   ip_range = "10.0.0.0/16"
   tags  {
@@ -102,9 +107,11 @@ resource "outscale_vm" "vm03" {
   security_group_ids = [outscale_security_group.security_group01.security_group_id]
   subnet_id          = outscale_subnet.subnet01.subnet_id
 }
+```
 
-# Create a VM with a NIC
+### Create a VM with a NIC
 
+```hcl
 resource "outscale_net" "net02" {
    ip_range = "10.0.0.0/16"
 }
@@ -128,3 +135,4 @@ resource "outscale_vm" "vm04" {
     device_number = "0"
   }
 }
+```

@@ -4,6 +4,9 @@
  outscale/data_source_outscale_client_gateways.go, ReadClientGateways
  outscale/data_source_outscale_dhcp_option.go, ReadDhcpOptions
  outscale/data_source_outscale_dhcp_options.go, ReadDhcpOptions
+ outscale/data_source_outscale_flexible_gpu.go, ReadFlexibleGpus
+ outscale/data_source_outscale_flexible_gpus.go, ReadFlexibleGpus
+ outscale/data_source_outscale_flexible_gpu_catalog.go, ReadFlexibleGpuCatalog
  outscale/data_source_outscale_image.go, ReadImages
  outscale/data_source_outscale_images.go, ReadImages
  outscale/data_source_outscale_internet_service.go, ReadInternetServices
@@ -15,10 +18,11 @@
  outscale/data_source_outscale_load_balancer_vm_health.go, ReadVmsHealth
  outscale/data_source_outscale_load_balancer.go, ReadLoadBalancers
  outscale/data_source_outscale_load_balancers.go, ReadLoadBalancers
- outscale/data_source_outscale_load_balancer_listener_rule.go, ReadListenerRules
- outscale/data_source_outscale_load_balancer_listener_rules.go, ReadListenerRules
  outscale/data_source_outscale_nat_service.go, ReadNatServices
  outscale/data_source_outscale_nat_services.go, ReadNatServices
+ outscale/data_source_outscale_net_access_point.go, ReadNetAccessPoints
+ outscale/data_source_outscale_net_access_points.go, ReadNetAccessPoints
+ outscale/data_source_outscale_net_access_point_services.go, ReadNetAccessPointServices
  outscale/data_source_outscale_net_attributes.go, ReadNets
  outscale/data_source_outscale_net_peering.go, ReadNetPeerings
  outscale/data_source_outscale_net_peerings.go, ReadNetPeerings
@@ -28,6 +32,7 @@
  outscale/data_source_outscale_nics.go, ReadNics
  outscale/data_source_outscale_public_ip.go, ReadPublicIps
  outscale/data_source_outscale_public_ips.go, ReadPublicIps
+ outscale/data_source_outscale_regions.go, ReadRegions
  outscale/data_source_outscale_route_table.go, ReadRouteTables
  outscale/data_source_outscale_route_tables.go, ReadRouteTables
  outscale/data_source_outscale_security_group.go, ReadSecurityGroups
@@ -36,6 +41,7 @@
  outscale/data_source_outscale_snapshots.go, ReadSnapshots
  outscale/data_source_outscale_subnet.go, ReadSubnets
  outscale/data_source_outscale_subnets.go, ReadSubnets
+ outscale/data_source_outscale_subregions.go, ReadSubregions
  outscale/data_source_outscale_tag.go, ReadTags
  outscale/data_source_outscale_tags.go, ReadTags
  outscale/data_source_outscale_virtual_gateway.go, ReadVirtualGateways
@@ -48,9 +54,12 @@
  outscale/data_source_outscale_volumes.go, ReadVolumes
  outscale/data_source_outscale_vpn_connection.go, ReadVpnConnections
  outscale/data_source_outscale_vpn_connections.go, ReadVpnConnections
+ outscale/data_source_outscale_vm_types.go, ReadVmTypes
  outscale/resource_outscale_access_key.go, CreateAccessKey, UpdateAccessKey
  outscale/resource_outscale_client_gateway.go, CreateClientGateway
  outscale/resource_outscale_dhcp_option.go, CreateDhcpOptions
+ outscale/resource_outscale_flexible_gpu.go, CreateFlexibleGpu
+ outscale/resource_outscale_flexible_gpu_link.go, LinkFlexibleGpu
  outscale/resource_outscale_image_launch_permission.go, UpdateImage
  outscale/resource_outscale_image.go, CreateImage
  outscale/resource_outscale_internet_service_link.go, LinkInternetService
@@ -62,6 +71,7 @@
  outscale/resource_outscale_load_balancer_vms.go, RegisterVmsInLoadBalancer
  outscale/resource_outscale_load_balancer.go, CreateLoadBalancer
  outscale/resource_outscale_nat_service.go, CreateNatService
+ outscale/resource_outscale_net_access_point.go, CreateNetAccessPoint
  outscale/resource_outscale_net_attributes.go, UpdateNet
  outscale/resource_outscale_net_peering_acceptation.go, AcceptNetPeering
  outscale/resource_outscale_net_peering.go, CreateNetPeering
