@@ -23,7 +23,7 @@ provider "outscale" {
   secret_key_id = "asecretkey"
 }
 ```
-Available regions are: eu-west-2, us-east-2, us-west-1, cn-southeast-1
+Available regions are: eu-west-2, us-east-2, us-west-1, ap-northeast-1
 
 
 ## Authentication

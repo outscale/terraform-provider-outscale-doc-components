@@ -1,18 +1,22 @@
 argument:
   add:
-    toto: Description of new toto parameter
-    filters.titi: Description of new titi parameter
-    tutu: Description of new tutu parameter
-    tutu.tete: Description of new tutu.tete parameter
-    tutu.tete.tyty: Description of new tutu.tete.tyty parameter
+    toto: Description of new parameter toto.
+    filters.titi: Description of titi, new sub-parameter of existing parameter filters.
+    tutu: Description of new parameter tutu.
+    tutu.tete: Description of new sub-parameter tete.
+    tutu.tete.tyty: Description of new second level sub-parameter tyty.
   rename:
-    filters.tag_values: tag_titi
+    security_groups: security_group_names
+  rename:
+    filters:
+      name: filter
+      description: New description of the renamed parameter.
   remove:
     - filters.tags
 attribute:
   add:
-    toto: desciption
+    toto: "Description of new parameter toto with potentially special characters or ending with:"
   rename:
     vms.block_device_mappings: block_device_mappings_created
   remove:
-    - vms.nics
+    - vms.nics.account_id

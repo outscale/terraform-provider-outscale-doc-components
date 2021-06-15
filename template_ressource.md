@@ -11,15 +11,19 @@ description: |-
 Manages ARTICLE LITERAL_NAME.
 For more information on this resource, see the [User Guide](LINK_UG).
 For more information on this resource actions, see the [API documentation](LINK_API).
+
+## Example Usage
+
 EXAMPLE
+
 ## Argument Reference
 
-The following arguments are supported:
+ARGUMENTS_SENTENCE
 
 INPUT
 ## Attribute Reference
 
-The following attributes are exported:
+ATTRIBUTES_SENTENCE
 
 OUTPUT
 IMPORT

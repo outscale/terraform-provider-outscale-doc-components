@@ -8,7 +8,7 @@
 #      load_balancer_port     = 80
 #  }
 #  listeners {
-#      backend_port           = 8080
+#     backend_port           = 8080
 #      backend_protocol       = "HTTPS"
 #      load_balancer_protocol = "HTTPS"
 #      load_balancer_port     = 8080
@@ -30,10 +30,11 @@
 #  }
 #}
 
-# Update health check
+### Update health check
 
+```
 resource "outscale_load_balancer_attributes" "attributes01" {
-   load_balancer_name = outscale_load_balancer.load_balancer01.load_balancer_id
+   load_balancer_name = outscale_load_balancer.load_balancer01.id
    health_check  {
       healthy_threshold   = 10
       check_interval      = 30
@@ -44,11 +45,13 @@ resource "outscale_load_balancer_attributes" "attributes01" {
       unhealthy_threshold = 5
    }
 }
+```
 
-# Update access log
+### Update access log
 
+```
 resource "outscale_load_balancer_attributes" "attributes02" {
-  load_balancer_name = outscale_load_balancer.load_balancer01.load_balancer_id
+  load_balancer_name = outscale_load_balancer.load_balancer01.id
   access_log {
       publication_interval = 5
       is_enabled           = true
@@ -56,19 +59,21 @@ resource "outscale_load_balancer_attributes" "attributes02" {
       osu_bucket_prefix    = "access-logs-01234"
    }
 }
-
-# Update policies
-
+```
+### Update policies
+```
 resource "outscale_load_balancer_attributes" "attributes03" {
-  load_balancer_name = outscale_load_balancer.load_balancer01.load_balancer_id
+  load_balancer_name = outscale_load_balancer.load_balancer01.id
   load_balancer_port = 80
   policy_names       = ["policy-name-01"]
 }
+```
 
-# Update SSL certificate
-
+### Update SSL certificate
+```
 resource "outscale_load_balancer_attributes" "attributes04" {
-  load_balancer_name    = outscale_load_balancer.load_balancer01.load_balancer_id
+  load_balancer_name    = outscale_load_balancer.load_balancer01.id
   load_balancer_port    = 8080
   server_certificate_id = "arn:aws:iam::012345678910:server-certificate/MyCertificates/Certificate"
 }
+```
