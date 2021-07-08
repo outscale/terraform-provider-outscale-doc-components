@@ -30,13 +30,19 @@
  outscale/data_source_outscale_nets.go, ReadNets
  outscale/data_source_outscale_nic.go, ReadNics
  outscale/data_source_outscale_nics.go, ReadNics
+ outscale/data_source_outscale_product_type.go, ReadProductTypes
+ outscale/data_source_outscale_product_types.go, ReadProductTypes
  outscale/data_source_outscale_public_ip.go, ReadPublicIps
  outscale/data_source_outscale_public_ips.go, ReadPublicIps
+ outscale/data_source_outscale_quota.go, ReadQuotas
+ outscale/data_source_outscale_quotas.go, ReadQuotas
  outscale/data_source_outscale_regions.go, ReadRegions
  outscale/data_source_outscale_route_table.go, ReadRouteTables
  outscale/data_source_outscale_route_tables.go, ReadRouteTables
  outscale/data_source_outscale_security_group.go, ReadSecurityGroups
  outscale/data_source_outscale_security_groups.go, ReadSecurityGroups
+ outscale/data_source_outscale_snapshot_export_task.go, ReadSnapshotExportTasks
+ outscale/data_source_outscale_snapshot_export_tasks.go, ReadSnapshotExportTasks
  outscale/data_source_outscale_snapshot.go, ReadSnapshots
  outscale/data_source_outscale_snapshots.go, ReadSnapshots
  outscale/data_source_outscale_subnet.go, ReadSubnets
@@ -87,6 +93,7 @@
  outscale/resource_outscale_security_group_rule.go, CreateSecurityGroupRule
  outscale/resource_outscale_security_group.go, CreateSecurityGroup
  outscale/resource_outscale_snapshot_attributes.go, UpdateSnapshot
+ outscale/resource_outscale_snapshot_export_task.go, CreateSnapshotExportTask
  outscale/resource_outscale_snapshot.go, CreateSnapshot
  outscale/resource_outscale_subnet.go, CreateSubnet
  outscale/resource_outscale_tags.go, CreateTags
