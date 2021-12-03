@@ -1,3 +1,5 @@
 argument:
-  rename:
-    filters: filter
+  remove:
+    - filters
+  add:
+    net_id: (Optional) The ID of the Net.

@@ -1,4 +1,4 @@
-```
+```hcl
 data "outscale_flexible_gpus" "flexible_gpus01" {
   filter {
     name   = "fgpu_ids"

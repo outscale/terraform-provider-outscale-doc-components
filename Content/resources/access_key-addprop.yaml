@@ -1,6 +1,8 @@
 argument:
+  add:
+    state: (Optional) The state for the access key (`ACTIVE` | `INACTIVE`).
   remove:
-    - access_key_id
-attributes:
+    - expiration_date # Waiting for Terraform implementation
+attribute:
   remove:
-    - access_key
+    - expiration_date # Waiting for Terraform implementation

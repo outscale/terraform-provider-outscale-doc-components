@@ -1,3 +1,8 @@
 argument:
   rename:
-    filters: filter
+    filters: 
+      name: filter
+      description: "(Optional) A combination of a filter name and one or more filter values. You can specify this argument for as many filter names as you need. The filter name can be any of the following:"
+attribute:
+  remove:
+    - snapshots.creation_date # Waiting for Terraform implementation

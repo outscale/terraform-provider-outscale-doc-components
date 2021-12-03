@@ -1,6 +1,6 @@
 ---
 layout: "outscale"
-page_title: "3DS OUTSCALE: outscale_RESOURCE_NAME"
+page_title: "OUTSCALE: outscale_RESOURCE_NAME"
 sidebar_current: "outscale-RESOURCE-NAME"
 description: |-
   [Provides information about LITERAL_NAME_PLURAL.]

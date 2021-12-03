@@ -1,0 +1,20 @@
+argument:
+  add:
+    permissions_to_create_volume_additions: (Optional) Information about the users to whom you want to give permissions for the resource.
+    permissions_to_create_volume_additions.account_ids: (Optional) The account ID of one or more users to whom you want to give permissions.
+    permissions_to_create_volume_additions.global_permission: (Optional) If true, the resource is public. If false, the resource is private.
+    permissions_to_create_volume_removals: (Optional) Information about the users from whom you want to remove permissions for the resource.
+    permissions_to_create_volume_removals.account_ids: (Optional) The account ID of one or more users from whom you want to remove permissions.
+    permissions_to_create_volume_removals.global_permission: (Optional) If true, the resource is public. If false, the resource is private.
+  remove:
+    - permissions_to_create_volume
+attribute:
+  remove:
+    - account_alias
+    - description
+    - permissions_to_create_volume
+    - progress
+    - state
+    - tags
+    - volume_id
+    - volume_size

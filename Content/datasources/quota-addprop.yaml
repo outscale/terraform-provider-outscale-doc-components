@@ -3,3 +3,15 @@ argument:
     filters: 
       name: filter
       description: "(Optional) A combination of a filter name and one or more filter values. You can specify this argument for as many filter names as you need. The filter name can be any of the following:"
+attribute:
+  remove:
+    - quotas
+  add:
+    account_id: "The account ID of the owner of the quotas."
+    description: "The description of the quota."
+    max_value: "The maximum value of the quota for the OUTSCALE user account (if there is no limit, `0`)."
+    name: "The unique name of the quota."
+    quota_collection: "The group name of the quota."
+    short_description: "The description of the quota."
+    used_value: "The limit value currently used by the OUTSCALE user account."
+

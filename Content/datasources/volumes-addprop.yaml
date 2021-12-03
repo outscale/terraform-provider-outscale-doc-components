@@ -1,3 +1,11 @@
 argument:
   rename:
-    filters: filter
+    filters: 
+      name: filter
+      description: "(Optional) A combination of a filter name and one or more filter values. You can specify this argument for as many filter names as you need. The filter name can be any of the following:"
+attribute:
+  rename:
+    volumes.iops:
+      description: The number of I/O operations per second (IOPS):<br />- For `io1` volumes, the number of provisioned IOPS.<br />- For `gp2` volumes, the baseline performance of the volume.
+  remove:
+    - volumes.creation_date # Waiting for Terraform implementation

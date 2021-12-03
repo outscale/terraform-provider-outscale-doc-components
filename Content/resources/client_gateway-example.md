@@ -1,3 +1,4 @@
+```hcl
 resource "outscale_client_gateway" "client_gateway01" {
     bgp_asn         = 65000
     public_ip       = "111.11.11.111"
@@ -7,3 +8,4 @@ resource "outscale_client_gateway" "client_gateway01" {
         value = "client_gateway_01"
         }
 }
+```

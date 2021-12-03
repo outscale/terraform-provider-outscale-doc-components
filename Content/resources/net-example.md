@@ -1,12 +1,15 @@
-# Create a Net
+### Create a Net
 
+```hcl
 resource "outscale_net" "net01" {
 	ip_range = "10.10.0.0/16"
 	tenancy  = "default"
 }
+```
 
-# Create a Net with a network
+### Create a Net with a network
 
+```hcl
 resource "outscale_net" "net02" {
 	ip_range = "10.0.0.0/16"
 }
@@ -46,3 +49,4 @@ resource "outscale_internet_service_link" "internet_service_link01" {
 	net_id              = outscale_net.net02.net_id
 	internet_service_id = outscale_internet_service.internet_service01.id
 }
+```
