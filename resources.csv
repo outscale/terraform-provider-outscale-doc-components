@@ -9,6 +9,8 @@
  outscale/data_source_outscale_flexible_gpu_catalog.go, ReadFlexibleGpuCatalog
  outscale/data_source_outscale_image.go, ReadImages
  outscale/data_source_outscale_images.go, ReadImages
+ outscale/data_source_outscale_image_export_task.go, ReadImageExportTasks
+ outscale/data_source_outscale_image_export_tasks.go, ReadImageExportTasks
  outscale/data_source_outscale_internet_service.go, ReadInternetServices
  outscale/data_source_outscale_internet_services.go, ReadInternetServices
  outscale/data_source_outscale_keypair.go, ReadKeypairs
@@ -41,6 +43,8 @@
  outscale/data_source_outscale_route_tables.go, ReadRouteTables
  outscale/data_source_outscale_security_group.go, ReadSecurityGroups
  outscale/data_source_outscale_security_groups.go, ReadSecurityGroups
+ outscale/data_source_outscale_server_certificate.go, ReadServerCertificates
+ outscale/data_source_outscale_server_certificates.go, ReadServerCertificates
  outscale/data_source_outscale_snapshot_export_task.go, ReadSnapshotExportTasks
  outscale/data_source_outscale_snapshot_export_tasks.go, ReadSnapshotExportTasks
  outscale/data_source_outscale_snapshot.go, ReadSnapshots
@@ -48,8 +52,6 @@
  outscale/data_source_outscale_subnet.go, ReadSubnets
  outscale/data_source_outscale_subnets.go, ReadSubnets
  outscale/data_source_outscale_subregions.go, ReadSubregions
- outscale/data_source_outscale_tag.go, ReadTags
- outscale/data_source_outscale_tags.go, ReadTags
  outscale/data_source_outscale_virtual_gateway.go, ReadVirtualGateways
  outscale/data_source_outscale_virtual_gateways.go, ReadVirtualGateways
  outscale/data_source_outscale_vm_state.go, ReadVmsState
@@ -61,13 +63,14 @@
  outscale/data_source_outscale_vpn_connection.go, ReadVpnConnections
  outscale/data_source_outscale_vpn_connections.go, ReadVpnConnections
  outscale/data_source_outscale_vm_types.go, ReadVmTypes
- outscale/resource_outscale_access_key.go, CreateAccessKey, UpdateAccessKey
+ outscale/resource_outscale_access_key.go, CreateAccessKey
  outscale/resource_outscale_client_gateway.go, CreateClientGateway
  outscale/resource_outscale_dhcp_option.go, CreateDhcpOptions
  outscale/resource_outscale_flexible_gpu.go, CreateFlexibleGpu
  outscale/resource_outscale_flexible_gpu_link.go, LinkFlexibleGpu
  outscale/resource_outscale_image_launch_permission.go, UpdateImage
  outscale/resource_outscale_image.go, CreateImage
+ outscale/resource_outscale_image_export_task.go, CreateImageExportTask
  outscale/resource_outscale_internet_service_link.go, LinkInternetService
  outscale/resource_outscale_internet_service.go, CreateInternetService
  outscale/resource_outscale_keypair.go, CreateKeypair
@@ -92,16 +95,16 @@
  outscale/resource_outscale_route.go, CreateRoute
  outscale/resource_outscale_security_group_rule.go, CreateSecurityGroupRule
  outscale/resource_outscale_security_group.go, CreateSecurityGroup
+ outscale/resource_outscale_server_certificate.go, CreateServerCertificate
  outscale/resource_outscale_snapshot_attributes.go, UpdateSnapshot
  outscale/resource_outscale_snapshot_export_task.go, CreateSnapshotExportTask
  outscale/resource_outscale_snapshot.go, CreateSnapshot
  outscale/resource_outscale_subnet.go, CreateSubnet
- outscale/resource_outscale_tags.go, CreateTags
  outscale/resource_outscale_virtual_gateway_link.go, LinkVirtualGateway
  outscale/resource_outscale_virtual_gateway_route_propagation.go, UpdateRoutePropagation
  outscale/resource_outscale_virtual_gateway.go, CreateVirtualGateway
  outscale/resource_outscale_vm.go, CreateVms
- outscale/resource_outscale_volume_link.go, LinkVolume
+ outscale/resource_outscale_volumes_link.go, LinkVolume
  outscale/resource_outscale_volume.go, CreateVolume
  outscale/resource_outscale_vpn_connection_route.go, CreateVpnConnectionRoute
  outscale/resource_outscale_vpn_connection.go, CreateVpnConnection

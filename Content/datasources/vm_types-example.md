@@ -1,4 +1,4 @@
-### All types of VM
+### All types of VMs
 ```hcl
 data "outscale_vm_types" "all_vm_types" {
 }
@@ -8,18 +8,18 @@ data "outscale_vm_types" "all_vm_types" {
 ```hcl
 data "outscale_vm_types" "vm_types01" {
     filter {
-        name     = "bsu_optimized"
-        values   = [true]
+        name   = "bsu_optimized"
+        values = [true]
         }
 }
 ```
 
-### Specific type of VM
+### Specific VM type
 ```hcl
 data "outscale_vm_types" "vm_types02" {
     filter {
-        name     = "vm_type_names"
-        values   = ["m3.large"]
+        name   = "vm_type_names"
+        values = ["m3.large"]
         }
 }
 ```

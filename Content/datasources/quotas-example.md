@@ -2,8 +2,8 @@
 ```hcl
 data "outscale_quotas" "vpc_quotas01" {
   filter {
-    name     = "collections"
-    values   = ["VPC"]
+    name   = "collections"
+    values = ["VPC"]
   }
 }
 ```

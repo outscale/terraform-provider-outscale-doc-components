@@ -1,0 +1,4 @@
+argument:
+  rename:
+    vm_id:
+      description: The ID of the VM.<br />- In the public Cloud, this parameter is required.<br />- In a Net, this parameter is required if the VM has only one NIC. Otherwise, you need to specify the `nic_id` parameter instead. You cannot specify both parameters at the same time.

@@ -1,0 +1,26 @@
+argument: 
+  remove:
+    - permissions_to_launch
+  add:
+    permission_additions: (Optional) Information about the users to whom you want to give permissions for the resource.
+    permission_additions.global_permission: (Optional) If true, the resource is public. If false, the resource is private.
+    permission_additions.account_ids: (Optional) The account ID of one or more users to whom you want to give permissions.
+    permission_removals: (Optional) Information about the users from whom you want to remove permissions for the resource.
+    permission_removals.global_permission: (Optional) If true, the resource is public. If false, the resource is private.
+    permission_removals.account_ids: (Optional) The account ID of one or more users from whom you want to remove permissions.
+attribute:
+  remove:
+    - account_alias
+    - account_id
+    - architecture
+    - block_device_mappings
+    - creation_date
+    - file_location
+    - image_name
+    - image_type
+    - product_codes
+    - root_device_name
+    - root_device_type
+    - state_comment
+    - state
+    - tags

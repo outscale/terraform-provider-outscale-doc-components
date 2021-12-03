@@ -1,5 +1,11 @@
 argument:
   add:
-    tags: A tag to add to this resource. You can specify this argument several times.
-    tags.key: The key of the tag, with a minimum of 1 character.
-    tags.value: The value of the tag, between 0 and 255 characters.
+    tags: (Optional) A tag to add to this resource. You can specify this argument several times.
+    tags.key: (Required) The key of the tag, with a minimum of 1 character.
+    tags.value: (Required) The value of the tag, between 0 and 255 characters.
+attribute:
+  rename:
+    iops:
+      description: The number of I/O operations per second (IOPS):<br />- For `io1` volumes, the number of provisioned IOPS.<br />- For `gp2` volumes, the baseline performance of the volume.
+  remove:
+    - creation_date # Waiting for Terraform implementation

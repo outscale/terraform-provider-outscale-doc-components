@@ -27,7 +27,7 @@ resource "outscale_nic" "nic01" {
 
 ```
 
-### Create a NIC with private IPs
+### Create a NIC with private IP addresses
 
 ```hcl
 resource "outscale_nic" "nic02" {
