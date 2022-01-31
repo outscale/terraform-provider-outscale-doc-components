@@ -1,7 +1,7 @@
 attribute:
   add:
+    internet_service_id: The ID of the Internet service.
     state: The state of the attachment of the Internet service to the Net (always `available`).
     tags: One or more tags associated with the Internet service.
     tags.key: The key of the tag, with a minimum of 1 character.
     tags.value: The value of the tag, between 0 and 255 characters.
-    internet_service_id: The ID of the Internet service.

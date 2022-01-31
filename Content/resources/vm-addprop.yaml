@@ -1,34 +1,34 @@
 argument:
   remove:
-    - placement
     - boot_on_creation
     - max_vms_count
     - min_vms_count
+    - placement
   add:
-    tags: (Optional) A tag to add to this resource. You can specify this argument several times.
-    tags.key: (Required) The key of the tag, with a minimum of 1 character.
-    tags.value: (Required) The value of the tag, between 0 and 255 characters.
     get_admin_password: "(Optional) (Windows VM only) If true, waits for the administrator password of the VM to become available in order to retrieve the VM. The password is exported to the `admin_password` attribute."
     placement_subregion_name: (Optional) The name of the Subregion where the VM is placed.
     placement_tenancy: (Optional) The tenancy of the VM (`default` | `dedicated`).
     state: The state of the VM (`running` | `stopped`). If set to `stopped`, the VM is stopped regardless of the value of the `vm_initiated_shutdown_behavior` argument.
+    tags: (Optional) A tag to add to this resource. You can specify this argument several times.
+    tags.key: (Required) The key of the tag, with a minimum of 1 character.
+    tags.value: (Required) The value of the tag, between 0 and 255 characters.
   rename:
-    security_groups: security_group_names
     bsu_optimized:
       description: "If true, the VM is created with optimized BSU I/O. Updating this parameter will trigger a stop/start of the VM."
     performance:
       description: "The performance of the VM (`medium` | `high` | `highest`). Updating this parameter will trigger a stop/start of the VM."
-    vm_type:
-      description: "The type of VM (`t2.small` by default). Updating this parameter will trigger a stop/start of the VM.<br /> For more information, see [Instance Types](https://wiki.outscale.net/display/EN/Instance+Types)."
+    security_groups: security_group_names
     user_data:
       description: "Data or script used to add a specific configuration to the VM. It must be Base64-encoded, either directly or using the [base64encode](https://www.terraform.io/docs/configuration/functions/base64encode.html) Terraform function. For multiline strings, use a [heredoc syntax](https://www.terraform.io/docs/configuration/expressions.html#string-literals). Updating this parameter will trigger a stop/start of the VM."
+    vm_type:
+      description: "The type of VM (`t2.small` by default). Updating this parameter will trigger a stop/start of the VM.<br /> For more information, see [Instance Types](https://wiki.outscale.net/display/EN/Instance+Types)."
 attribute:
   remove:
     - creation_date # Waiting for Terraform implementation
     - placement
   add:
+    admin_password: (Windows VM only) The administrator password of the VM. This password is encrypted with the keypair you specified when launching the VM and encoded in Base64. You need to wait about 10 minutes after launching the VM to be able to retrieve this password.<br />If `get_admin_password` is false or not specified, the VM resource is created without the `admin_password` attribute. Once `admin_password` is available, it will appear in the Terraform state after the next **refresh** or **apply** command.<br />If `get_admin_password` is true, the VM resource itself is not considered created until the `admin_password` attribute is available.<br />Note also that after the first reboot of the VM, this attribute can no longer be retrieved. For more information on how to use this password to connect to the VM, see [Accessing a Windows Instance](https://wiki.outscale.net/display/EN/Accessing+a+Windows+Instance).
     placement_subregion_name: The name of the Subregion where the VM is placed.
     placement_tenancy: The tenancy of the VM (`default` | `dedicated`).
-    admin_password: (Windows VM only) The administrator password of the VM. This password is encrypted with the keypair you specified when launching the VM and encoded in Base64. You need to wait about 10 minutes after launching the VM to be able to retrieve this password.<br />If `get_admin_password` is false or not specified, the VM resource is created without the `admin_password` attribute. Once `admin_password` is available, it will appear in the Terraform state after the next **refresh** or **apply** command.<br />If `get_admin_password` is true, the VM resource itself is not considered created until the `admin_password` attribute is available.<br />Note also that after the first reboot of the VM, this attribute can no longer be retrieved. For more information on how to use this password to connect to the VM, see [Accessing a Windows Instance](https://wiki.outscale.net/display/EN/Accessing+a+Windows+Instance).
   rename:
     block_device_mappings: block_device_mappings_created

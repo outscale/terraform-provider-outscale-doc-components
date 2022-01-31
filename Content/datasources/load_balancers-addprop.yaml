@@ -5,4 +5,6 @@ argument:
       description: "(Optional) A combination of a filter name and one or more filter values. You can specify this argument for as many filter names as you need. The filter name can be any of the following:"
 attribute:
   remove:
+    - load_balancers.backend_ips # Waiting for Terraform implementation
     - load_balancers.load_balancer_sticky_cookie_policies.cookie_expiration_period # Waiting for Terraform implementation
+    - load_balancers.public_ip # Waiting for Terraform implementation
