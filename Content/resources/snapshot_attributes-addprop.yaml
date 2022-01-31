@@ -11,6 +11,7 @@ argument:
 attribute:
   remove:
     - account_alias
+    - creation_date # Waiting for Terraform implementation
     - description
     - permissions_to_create_volume
     - progress
