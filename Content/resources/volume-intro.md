@@ -1,0 +1,2 @@
+
+~> **Note** When updating an existing volume linked to a running virtual machine (VM), the VM will temporarily be stopped. For more information, see [About Instance Lifecycle](https://docs.outscale.com/en/userguide/About-Instance-Lifecycle.html).
