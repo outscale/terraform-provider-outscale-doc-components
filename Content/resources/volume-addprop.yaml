@@ -5,9 +5,9 @@ argument:
     tags.value: (Required) The value of the tag, between 0 and 255 characters.
   rename:
     size:
-      description: "(Optional) The size of the volume, in gibibytes (GiB). The maximum allowed size for a volume is 14901 GiB. This parameter is required if the volume is not created from a snapshot (`snapshot_id` unspecified).<br />If you update an existing volume, this value must be equal to or greater than the current size of the volume. You might need to reconfigure the file system, for more information see [Increasing the Size of a Volume](https://docs.outscale.com/en/userguide/Increasing-the-Size-of-a-Volume.html)."
+      description: "The size of the volume, in gibibytes (GiB). The maximum allowed size for a volume is 14901 GiB. This parameter is required if the volume is not created from a snapshot (`snapshot_id` unspecified).<br />If you update an existing volume, this value must be equal to or greater than the current size of the volume. You might need to reconfigure the file system, for more information see [Increasing the Size of a Volume](https://docs.outscale.com/en/userguide/Increasing-the-Size-of-a-Volume.html)."
     volume_type:
-      description: "(Optional) The type of volume you want to create (`io1` | `gp2` | `standard`). If not specified, a `standard` volume is created.<br />If you create or update an existing volume to an `io1` volume, you must also specify the `iops` parameter.<br />For more information about volume types, see [Volume Types and IOPS](https://docs.outscale.com/en/userguide/About-Volumes.html#_volume_types_and_iops)."
+      description: "The type of volume you want to create (`io1` | `gp2` | `standard`). If not specified, a `standard` volume is created.<br />If you create or update an existing volume to an `io1` volume, you must also specify the `iops` parameter.<br />For more information about volume types, see [Volume Types and IOPS](https://docs.outscale.com/en/userguide/About-Volumes.html#_volume_types_and_iops)."
 attribute:
   rename:
     iops:
