@@ -1,0 +1,14 @@
+image: debian:stable
+variables:
+  GIT_STRATEGY: clone
+
+push_to_github:
+  only:
+    refs:
+      - tags
+  script: 
+   - apt update && apt install -y git
+   - git remote add github git@github.com:outscale-dev/terraform-provider-outscale-doc-components.git
+   - chmod 600 $DEPLOY_KEY_DOC_TEMPLATE
+   - GIT_SSH_COMMAND="ssh -v -o StrictHostKeyChecking=no -i $DEPLOY_KEY_DOC_TEMPLATE" git push github $CI_COMMIT_SHA:refs/heads/master  $CI_COMMIT_REF_NAME
+  

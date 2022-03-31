@@ -1,0 +1,19 @@
+name: Outscale API release
+on:
+  push:
+    tags:
+    - '[0-9]+.[0-9]+.[0-9]+'
+
+jobs:
+  dispatch-trigger:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Getting release details
+        id: release
+        run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
+      - name: Trigger osc-sdk-go build
+        env:
+          GH_TOKEN: ${{ secrets.GH_BOT_TOKEN }}
+          TAG: ${{ steps.release.outputs.TAG }}
+        run: .github/scripts/dispatch-trigger.sh

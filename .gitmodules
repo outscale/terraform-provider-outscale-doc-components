@@ -1,0 +1,3 @@
+[submodule "osc-api"]
+	path = osc-api
+	url = https://github.com/outscale/osc-api
