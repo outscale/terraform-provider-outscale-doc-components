@@ -21,8 +21,8 @@ load_balancer,a,load balancer,load balancers,https://docs.outscale.com/en/usergu
 nat_service,a,NAT service,NAT services,https://docs.outscale.com/en/userguide/About-NAT-Gateways.html,https://docs.outscale.com/api#3ds-outscale-api-natservice
 net_access_point,a,Net access point,Net access points,https://docs.outscale.com/en/userguide/About-VPC-Endpoints.html,https://docs.outscale.com/api#3ds-outscale-api-netaccesspoint
 net_access_point_service,a,Net access point service,Net access point services,https://docs.outscale.com/en/userguide/About-VPC-Endpoints.html,https://docs.outscale.com/api#3ds-outscale-api-netaccesspoint
-net_attribute,a,Net attribute,Net attributes,https://docs.outscale.com/en/userguide/About-DHCP-Options.html,https://docs.outscale.com/api#updatenet
-net_attributes,a,Net attribute,Net attributes,https://docs.outscale.com/en/userguide/About-DHCP-Options.html,https://docs.outscale.com/api#updatenet
+net_attribute,a,Net attributes,the attributes of a Net,https://docs.outscale.com/en/userguide/About-DHCP-Options.html,https://docs.outscale.com/api#updatenet
+net_attributes,a,Net attributes,the attributes of a Net,https://docs.outscale.com/en/userguide/About-DHCP-Options.html,https://docs.outscale.com/api#updatenet
 net_peering_acceptation,a,Net peering acceptation,Net peering acceptations,https://docs.outscale.com/en/userguide/About-VPC-Peering-Connections.html,https://docs.outscale.com/api#3ds-outscale-api-netpeering
 net_peering,a,Net peering,Net peerings,https://docs.outscale.com/en/userguide/About-VPC-Peering-Connections.html,https://docs.outscale.com/api#3ds-outscale-api-netpeering
 net,a,Net,Nets,https://docs.outscale.com/en/userguide/About-VPCs.html,https://docs.outscale.com/api#3ds-outscale-api-net
