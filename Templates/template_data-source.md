@@ -9,7 +9,10 @@ description: |-
 # outscale_RESOURCE_NAME Data Source
 
 Provides information about ARTICLE LITERAL_NAME.
-For more information on this resource, see the [User Guide](LINK_UG).
+
+ADDITIONAL_INTRO
+
+For more information on this resource, see the [User Guide](LINK_UG).  
 For more information on this resource actions, see the [API documentation](LINK_API).
 
 ## Example Usage
