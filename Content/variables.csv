@@ -1,4 +1,4 @@
-clés,articles (description),Forme complète (description),Forme complète plurielle (description),lien UG,LINK API
+Terraform name,Article,Singular,Plural,User Guide link,API documentation link
 access_key,an,access key,access keys,https://docs.outscale.com/en/userguide/About-Access-Keys.html,https://docs.outscale.com/api#3ds-outscale-api-accesskey
 client_gateway,a,client gateway,client gateways,https://docs.outscale.com/en/userguide/About-Customer-Gateways.html,https://docs.outscale.com/api#3ds-outscale-api-clientgateway
 dhcp_option,a,DHCP option,DHCP options,https://docs.outscale.com/en/userguide/About-DHCP-Options.html,https://docs.outscale.com/api#3ds-outscale-api-dhcpoption
