@@ -1,0 +1,4 @@
+argument:
+  rename:
+    ca_pem:
+      description: The CA in PEM format.
