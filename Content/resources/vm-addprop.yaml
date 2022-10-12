@@ -14,7 +14,7 @@ argument:
     tags.value: (Required) The value of the tag, between 0 and 255 characters.
   rename:
     bsu_optimized:
-      description: "If true, the VM is created with optimized BSU I/O. Updating this parameter will trigger a stop/start of the VM."
+      description: "This parameter is not available. It is present in our API for the sake of historical compatibility with AWS."
     performance:
       description: "The performance of the VM (`medium` | `high` | `highest`). Updating this parameter will trigger a stop/start of the VM."
     security_groups: security_group_names
