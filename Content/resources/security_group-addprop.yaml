@@ -1,5 +1,9 @@
 argument:
   add:
+    remove_default_outbound_rule: (Optional) (Net only) If `true`, the default outbound rule of the security group is deleted. Updating this parameter for an existing security group deletes the security group and creates a new one.
     tags: (Optional) A tag to add to this resource. You can specify this argument several times.
     tags.key: (Required) The key of the tag, with a minimum of 1 character.
     tags.value: (Required) The value of the tag, between 0 and 255 characters.
+attribute:
+  add:
+    remove_default_outbound_rule: If `true`, the default outbound rule of the security group has been deleted.
