@@ -78,7 +78,7 @@ resource "outscale_subnet" "subnet02" {
 }
 
 resource "outscale_internet_service" "internet_service01" {
-  depends_on = "outscale_net.net02"
+  depends_on = [outscale_net.net02]
 }
 
 resource "outscale_internet_service_link" "internet_service_link01" {
