@@ -8,3 +8,5 @@ attribute:
     - load_balancers.backend_ips # Waiting for Terraform implementation
     - load_balancers.load_balancer_sticky_cookie_policies.cookie_expiration_period # Waiting for Terraform implementation
     - load_balancers.public_ip # Waiting for Terraform implementation
+    - nested_virtualization # Waiting for Terraform implementation
+    - secured_cookies # Waiting for Terraform implementation
