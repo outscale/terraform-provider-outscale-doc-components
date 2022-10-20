@@ -1,6 +1,7 @@
 Terraform name,Article,Singular,Plural,User Guide link,API documentation link
 access_key,an,access key,access keys,https://docs.outscale.com/en/userguide/About-Access-Keys.html,https://docs.outscale.com/api#3ds-outscale-api-accesskey
 ca,a,CA,CAs,https://docs.outscale.com/en/userguide/About-API-Access-Rules.html,https://docs.outscale.com/api#3ds-outscale-api-ca
+api_access_policy,an,API access policy,API access policies,https://docs.outscale.com/en/userguide/About-Your-API-Access-Policy.html,https://docs.outscale.com/api#readapiaccesspolicy
 client_gateway,a,client gateway,client gateways,https://docs.outscale.com/en/userguide/About-Customer-Gateways.html,https://docs.outscale.com/api#3ds-outscale-api-clientgateway
 dhcp_option,a,DHCP option,DHCP options,https://docs.outscale.com/en/userguide/About-DHCP-Options.html,https://docs.outscale.com/api#3ds-outscale-api-dhcpoption
 flexible_gpu,a,flexible GPU,flexible GPUs,https://docs.outscale.com/en/userguide/About-Flexible-GPUs.html,https://docs.outscale.com/api#3ds-outscale-api-flexiblegpu
