@@ -2,6 +2,7 @@
  outscale/data_source_outscale_access_keys.go, ReadAccessKeys
  outscale/data_source_outscale_ca.go, ReadCas
  outscale/data_source_outscale_cas.go, ReadCas
+ outscale/data_source_outscale_api_access_policy.go, ReadApiAccessPolicy
  outscale/data_source_outscale_client_gateway.go, ReadClientGateways
  outscale/data_source_outscale_client_gateways.go, ReadClientGateways
  outscale/data_source_outscale_dhcp_option.go, ReadDhcpOptions
@@ -67,6 +68,7 @@
  outscale/data_source_outscale_vm_types.go, ReadVmTypes
  outscale/resource_outscale_access_key.go, CreateAccessKey
  outscale/resource_outscale_ca.go, CreateCa
+ outscale/resource_outscale_api_access_policy.go, UpdateApiAccessPolicy
  outscale/resource_outscale_client_gateway.go, CreateClientGateway
  outscale/resource_outscale_dhcp_option.go, CreateDhcpOptions
  outscale/resource_outscale_flexible_gpu.go, CreateFlexibleGpu
