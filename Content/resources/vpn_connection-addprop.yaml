@@ -5,4 +5,5 @@ argument:
     tags.value: (Required) The value of the tag, between 0 and 255 characters.
 attribute:
   remove:
+    - vgw_telemetries
     - vpn_options # Waiting for Terraform implementation
