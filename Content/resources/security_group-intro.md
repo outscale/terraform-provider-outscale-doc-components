@@ -1,0 +1,1 @@
+Security groups you create to use in a Net contain a default outbound rule that allows all outbound flows.
