@@ -1,11 +1,23 @@
+### Create an API access rule based on IPs
+
 ```hcl
-resource "outscale_api_access_rule" "api_access_rule_01" {
-  ca_ids = ["ca-12345678"]
+resource "outscale_api_access_rule" "api_access_rule01" {
+  ip_ranges   = ["192.0.2.0", "192.0.2.0/16"]
+  description = "Basic API Access Rule from Terraform"
+}
+```
 
-  ip_ranges = ["192.0.2.0", "192.0.2.0/16"]
+### Create an API access rule based on IPs and Certificate Authority (CA)
 
-  cns = ["cn-1"]
+```hcl
+resource "outscale_ca" "ca01" {
+    ca_pem      = file("<PATH>")
+    description = "Terraform CA"
+}
 
-  description = "API Access Rules for Terraform"
+resource "outscale_api_access_rule" "api_access_rule02" {
+  ip_ranges   = ["192.0.2.0", "192.0.2.0/16"]
+  ca_ids      = [outscale_ca.ca01.ca_id]
+  description = "API Access Rule with CA from Terraform"
 }
 ```

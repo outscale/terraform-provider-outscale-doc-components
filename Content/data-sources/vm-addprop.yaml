@@ -3,14 +3,9 @@ argument:
     filters: 
       name: filter
       description: "(Optional) A combination of a filter name and one or more filter values. You can specify this argument for as many filter names as you need. The filter name can be any of the following:"
-    
-  remove:
-    - secured_cookies # Waiting for Terraform implementation
-
 attribute:
   rename:
     block_device_mappings: block_device_mappings_created
   remove:
     - creation_date # Waiting for Terraform implementation
     - nested_virtualization # Waiting for Terraform implementation
-    - secured_cookies # Waiting for Terraform implementation

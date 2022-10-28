@@ -15,3 +15,14 @@ resource "outscale_security_group" "security_group01" {
 	net_id              = outscale_net.net01.net_id
 }
 ```
+
+### Create a security group for Net without a default outbound rule 
+
+```hcl
+resource "outscale_security_group" "security_group02" {
+    remove_default_outbound_rule = true
+    description         = "Terraform security group without outbound rule"
+    security_group_name = "terraform-security-group"
+    net_id              = outscale_net.net01.net_id
+}
+```

@@ -1,13 +1,13 @@
 Terraform name,Article,Singular,Plural,User Guide link,API documentation link
 access_key,an,access key,access keys,https://docs.outscale.com/en/userguide/About-Access-Keys.html,https://docs.outscale.com/api#3ds-outscale-api-accesskey
-api_access_rule,an,api access rule,api access rules,https://docs.outscale.com/en/userguide/About-API-Access-Rules.html,https://docs.outscale.com/api#3ds-outscale-api-apiaccessrule
-ca,a,CA,CAs,https://docs.outscale.com/en/userguide/About-API-Access-Rules.html,https://docs.outscale.com/api#3ds-outscale-api-ca
-api_access_policy,an,API access policy,API access policies,https://docs.outscale.com/en/userguide/About-Your-API-Access-Policy.html,https://docs.outscale.com/api#readapiaccesspolicy
+api_access_policy,the,API access policy,API access policies,https://docs.outscale.com/en/userguide/About-Your-API-Access-Policy.html,https://docs.outscale.com/api#3ds-outscale-api-apiaccesspolicy
+api_access_rule,an,API access rule,API access rules,https://docs.outscale.com/en/userguide/About-API-Access-Rules.html,https://docs.outscale.com/api#3ds-outscale-api-apiaccessrule
+ca,a,Certificate Authority (CA),Certificate Authorities (CAs),https://docs.outscale.com/en/userguide/About-API-Access-Rules.html,https://docs.outscale.com/api#3ds-outscale-api-ca
 client_gateway,a,client gateway,client gateways,https://docs.outscale.com/en/userguide/About-Customer-Gateways.html,https://docs.outscale.com/api#3ds-outscale-api-clientgateway
 dhcp_option,a,DHCP option,DHCP options,https://docs.outscale.com/en/userguide/About-DHCP-Options.html,https://docs.outscale.com/api#3ds-outscale-api-dhcpoption
-flexible_gpu,a,flexible GPU,flexible GPUs,https://docs.outscale.com/en/userguide/About-Flexible-GPUs.html,https://docs.outscale.com/api#3ds-outscale-api-flexiblegpu
 flexible_gpu_catalog,a,flexible GPU catalog,the flexible GPU catalog,https://docs.outscale.com/en/userguide/About-Flexible-GPUs.html,https://docs.outscale.com/api#readflexiblegpucatalog
 flexible_gpu_link,a,flexible GPU link,flexible GPU links,https://docs.outscale.com/en/userguide/About-Flexible-GPUs.html,https://docs.outscale.com/api#3ds-outscale-api-flexiblegpu
+flexible_gpu,a,flexible GPU,flexible GPUs,https://docs.outscale.com/en/userguide/About-Flexible-GPUs.html,https://docs.outscale.com/api#3ds-outscale-api-flexiblegpu
 image_export_task,an,image export task,image export tasks,https://docs.outscale.com/en/userguide/About-OMIs.html,https://docs.outscale.com/api#3ds-outscale-api-image
 image_launch_permission,an,image launch permission,image launch permissions,https://docs.outscale.com/en/userguide/About-OMIs.html,https://docs.outscale.com/api#updateimage
 image,an,image,images,https://docs.outscale.com/en/userguide/About-OMIs.html,https://docs.outscale.com/api#3ds-outscale-api-image
@@ -22,8 +22,8 @@ load_balancer_vm_health,a,load balancer VM health,the health of one or more back
 load_balancer_vms,a,load balancer VM,load balancer VMs,https://docs.outscale.com/en/userguide/About-Load-Balancers.html,https://docs.outscale.com/api#3ds-outscale-api-loadbalancer
 load_balancer,a,load balancer,load balancers,https://docs.outscale.com/en/userguide/About-Load-Balancers.html,https://docs.outscale.com/api#3ds-outscale-api-loadbalancer
 nat_service,a,NAT service,NAT services,https://docs.outscale.com/en/userguide/About-NAT-Gateways.html,https://docs.outscale.com/api#3ds-outscale-api-natservice
-net_access_point,a,Net access point,Net access points,https://docs.outscale.com/en/userguide/About-VPC-Endpoints.html,https://docs.outscale.com/api#3ds-outscale-api-netaccesspoint
 net_access_point_service,a,Net access point service,Net access point services,https://docs.outscale.com/en/userguide/About-VPC-Endpoints.html,https://docs.outscale.com/api#3ds-outscale-api-netaccesspoint
+net_access_point,a,Net access point,Net access points,https://docs.outscale.com/en/userguide/About-VPC-Endpoints.html,https://docs.outscale.com/api#3ds-outscale-api-netaccesspoint
 net_attribute,a,Net attributes,the attributes of a Net,https://docs.outscale.com/en/userguide/About-DHCP-Options.html,https://docs.outscale.com/api#updatenet
 net_attributes,a,Net attributes,the attributes of a Net,https://docs.outscale.com/en/userguide/About-DHCP-Options.html,https://docs.outscale.com/api#updatenet
 net_peering_acceptation,a,Net peering acceptation,Net peering acceptations,https://docs.outscale.com/en/userguide/About-VPC-Peering-Connections.html,https://docs.outscale.com/api#3ds-outscale-api-netpeering
@@ -54,7 +54,7 @@ virtual_gateway,a,virtual gateway,virtual gateways,https://docs.outscale.com/en/
 vm_state,a,VM state,VM states,https://docs.outscale.com/en/userguide/About-Instance-Lifecycle.html,https://docs.outscale.com/api#readvmsstate
 vm_type,a,VM type,VM types,https://docs.outscale.com/en/userguide/Instance-Types.html,https://docs.outscale.com/api#readvmtypes
 vm,a,virtual machine (VM),virtual machines (VMs),https://docs.outscale.com/en/userguide/About-Instances.html,https://docs.outscale.com/api#3ds-outscale-api-vm
-volumes_link,a,volume link,volume links,https://docs.outscale.com/en/userguide/About-Volumes.html,https://docs.outscale.com/api#3ds-outscale-api-volume
 volume,a,volume,volumes,https://docs.outscale.com/en/userguide/About-Volumes.html,https://docs.outscale.com/api#3ds-outscale-api-volume
+volumes_link,a,volume link,volume links,https://docs.outscale.com/en/userguide/About-Volumes.html,https://docs.outscale.com/api#3ds-outscale-api-volume
 vpn_connection_route,a,VPN connection route,VPN connection routes,https://docs.outscale.com/en/userguide/About-Routing-Configuration-for-VPN-Connections.html,https://docs.outscale.com/api#3ds-outscale-api-vpnconnection
 vpn_connection,a,VPN connection,VPN connections,https://docs.outscale.com/en/userguide/About-VPN-Connections.html,https://docs.outscale.com/api#3ds-outscale-api-vpnconnection

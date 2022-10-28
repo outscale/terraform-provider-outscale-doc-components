@@ -1,1 +1,3 @@
-When updating the API access policy your access keys must imperatively have an expiration date, and none of the lifetimes can exceed the value of the maximum possible lifetime. The limit allowed for the maximum possible lifetime is 3153600000 seconds (100 years).
+To activate a trusted session, first you must:
+* Set expiration dates to all your access keys.
+* Specify a Certificate Authority (CA) in all your API access rules.
