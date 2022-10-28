@@ -1,9 +1,9 @@
 argument:
   add:
-    remove_default_outbound_rule: (Optional) (Net only) By default or if set to `false`, the security group is created with a default outbound rule allowing all outbound flows. If `true`, the security group is created without a default outbound rule. For an existing security group, setting this parameter to `true` deletes the security group and creates a new one.
+    remove_default_outbound_rule: (Optional) (Net only) By default or if set to false, the security group is created with a default outbound rule allowing all outbound flows. If set to true, the security group is created without a default outbound rule. For an existing security group, setting this parameter to true deletes the security group and creates a new one.
     tags: (Optional) A tag to add to this resource. You can specify this argument several times.
     tags.key: (Required) The key of the tag, with a minimum of 1 character.
     tags.value: (Required) The value of the tag, between 0 and 255 characters.
 attribute:
   add:
-    remove_default_outbound_rule: By default or if set to `false`, the security group is created with a default outbound rule allowing all outbound flows. If `true`, the security group is created without a default outbound rule.
+        remove_default_outbound_rule: If false, the security group is created with a default outbound rule allowing all outbound flows. If true, the security group is created without a default outbound rule.
