@@ -29,3 +29,23 @@ resource "outscale_image" "image03" {
   source_region_name = "eu-west-2"
 }
 ```
+
+### Create an image with a Block Storage Unit (BSU) volume
+
+```hcl
+resource "outscale_image" "image04" {
+  image_name = "terraform-omi-bsu"
+  block_device_mappings {
+    device_name = "/dev/sda1" 
+    bsu {
+      snapshot_id           = "snap-12345678"
+      volume_size           = "120"
+      volume_type           = "io1"
+      iops                  = 150
+      delete_on_vm_deletion = "true"
+    }
+  }
+  root_device_name = "/dev/sda1"
+  description      = "Terraform OMI with BSU"
+}
+```
