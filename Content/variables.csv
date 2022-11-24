@@ -1,5 +1,6 @@
 Terraform name,Article,Singular,Plural,User Guide link,API documentation link
 access_key,an,access key,access keys,https://docs.outscale.com/en/userguide/About-Access-Keys.html,https://docs.outscale.com/api#3ds-outscale-api-accesskey
+account,an,account,accounts,https://docs.outscale.com/en/userguide/About-Your-Account.html,https://docs.outscale.com/api#3ds-outscale-api-account
 api_access_policy,the,API access policy,API access policies,https://docs.outscale.com/en/userguide/About-Your-API-Access-Policy.html,https://docs.outscale.com/api#3ds-outscale-api-apiaccesspolicy
 api_access_rule,an,API access rule,API access rules,https://docs.outscale.com/en/userguide/About-API-Access-Rules.html,https://docs.outscale.com/api#3ds-outscale-api-apiaccessrule
 ca,a,Certificate Authority (CA),Certificate Authorities (CAs),https://docs.outscale.com/en/userguide/About-API-Access-Rules.html,https://docs.outscale.com/api#3ds-outscale-api-ca
