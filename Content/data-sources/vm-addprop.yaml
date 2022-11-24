@@ -6,6 +6,3 @@ argument:
 attribute:
   rename:
     block_device_mappings: block_device_mappings_created
-  remove:
-    - creation_date # Waiting for Terraform implementation
-    - nested_virtualization # Waiting for Terraform implementation
