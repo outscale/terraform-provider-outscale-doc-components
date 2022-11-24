@@ -1,5 +1,7 @@
  outscale/data_source_outscale_access_key.go, ReadAccessKeys
  outscale/data_source_outscale_access_keys.go, ReadAccessKeys
+ outscale/data_source_outscale_account.go, ReadAccounts
+ outscale/data_source_outscale_accounts.go, ReadAccounts
  outscale/data_source_outscale_api_access_rule.go, ReadApiAccessRules
  outscale/data_source_outscale_api_access_rules.go, ReadApiAccessRules
  outscale/data_source_outscale_ca.go, ReadCas
