@@ -3,9 +3,6 @@ argument:
     tags: (Optional) A tag to add to this resource. You can specify this argument several times.
     tags.key: (Required) The key of the tag, with a minimum of 1 character.
     tags.value: (Required) The value of the tag, between 0 and 255 characters.
-  
-  remove:
-    - log_servers # Waiting for Terraform implementation
 
   rename:
 
@@ -17,7 +14,3 @@ argument:
 
     ntp_servers:
       description: "The IPs of the Network Time Protocol (NTP) servers. You must specify at least one of the following parameters: `DomainName`, `DomainNameServers`, or `NtpServers`."
-
-attribute:
-  remove:
-    - log_servers # Waiting for Terraform implementation
