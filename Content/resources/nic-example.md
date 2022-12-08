@@ -32,8 +32,8 @@ resource "outscale_nic" "nic01" {
 ```hcl
 resource "outscale_nic" "nic02" {
   description       = "Terraform nic with private IPs"
-  subnet_id         = outscale_subnet.outscale_subnet01.subnet_id
-  security_group_ids = [outscale_security_group.outscale_security_group1.security_group_id]
+  subnet_id         = outscale_subnet.subnet01.subnet_id
+  security_group_ids = [outscale_security_group.security_group01.security_group_id]
   private_ips {
     is_primary = true
     private_ip = "10.0.0.1"
