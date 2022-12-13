@@ -1,10 +1,10 @@
 ### Read specific quotas
 ```hcl
 data "outscale_quotas" "vpc_quotas01" {
-  filter {
-    name   = "collections"
-    values = ["VPC"]
-  }
+    filter {
+        name   = "collections"
+        values = ["VPC"]
+    }
 }
 ```
 

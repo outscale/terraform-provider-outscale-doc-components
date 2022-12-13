@@ -6,6 +6,6 @@ resource "outscale_client_gateway" "client_gateway01" {
     tags {
         key   = "Name"
         value = "client_gateway_01"
-        }
+    }
 }
 ```

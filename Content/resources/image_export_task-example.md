@@ -2,8 +2,8 @@
 
 ```hcl
 resource "outscale_image" "image01" {
-  image_name = "terraform-image-to-export"
-  vm_id      = "i-12345678"
+    image_name = "terraform-image-to-export"
+    vm_id      = "i-12345678"
 }
 ```
 
