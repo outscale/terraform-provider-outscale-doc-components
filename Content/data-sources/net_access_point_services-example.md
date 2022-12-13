@@ -9,10 +9,10 @@ data "outscale_net_access_point_services" "all-services" {
 
 ```hcl
 data "outscale_net_access_point_services" "services01" {
-  filter {
-    name   = "service_ids"
-    values = ["pl-12345678","pl-12345679"]
-  }
+    filter {
+        name   = "service_ids"
+        values = ["pl-12345678","pl-12345679"]
+    }
 }
 ```
 
@@ -20,9 +20,9 @@ data "outscale_net_access_point_services" "services01" {
 
 ```hcl
 data "outscale_net_access_point_services" "services02" {
-  filter {
-    name   = "service_names"
-    values = ["com.outscale.eu-west-2.api"]
-  }
+    filter {
+        name   = "service_names"
+        values = ["com.outscale.eu-west-2.api"]
+    }
 }
 ```
