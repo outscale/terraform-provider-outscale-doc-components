@@ -19,6 +19,9 @@ attribute:
 To refer to parameters, use snake_case format.  
 To refer to a subparameter, specify its parent parameters from the highest to the lowest level separated by periods (`.`): `parent_parameter.subparameter.subsubparameter`.
 
+The structure of the file is important and must respect the different spacing, indentation, and formatting.
+
+
 ## Add a Parameter Specific to Terraform
 
 **Note**: You must specify whether the parameter is `Required` or `Optional` in the description.
@@ -35,6 +38,7 @@ To refer to a subparameter, specify its parent parameters from the highest to th
   rename:
     security_groups: security_group_names
 ```
+
 
 ## Adapt the Description of a Parameter
 
@@ -54,7 +58,6 @@ To refer to a subparameter, specify its parent parameters from the highest to th
       name: filter
       description: "(Optional) A combination of a filter name and one or more filter values. You can specify this argument for as many filter names as you need. The filter name can be any of the following:"
 ```
-
 ## Remove a Parameter
 
 **Note**: You must add a dash (`-`) in front of each removed parameter.  
