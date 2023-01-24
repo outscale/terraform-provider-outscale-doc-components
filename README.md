@@ -6,4 +6,4 @@ You can find the documentation of the OUTSCALE Terraform provider on the [offici
 
 No contribution accepted.
 
-You can open issues regarding the documentation of the OUTSCALE Terraform provider in the [terraform-provider-outscale](https://github.com/outscale-dev/terraform-provider-outscale) repository.
+You can open issues regarding the documentation of the OUTSCALE Terraform provider in the [terraform-provider-outscale](https://github.com/outscale/terraform-provider-outscale) repository.
