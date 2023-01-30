@@ -3,3 +3,5 @@ argument:
     filters: 
       name: filter
       description: "(Optional) A combination of a filter name and one or more filter values. You can specify this argument for as many filter names as you need. The filter name can be any of the following:"
+    filter.tags:
+      description: "The key/value combinations of the tags associated with the DHCP options sets, in the following format: `TAGKEY=TAGVALUE`."
