@@ -20,4 +20,4 @@ curl \
     -H "Authorization: token $GH_TOKEN" \
     -H "Accept: application/vnd.github.v3+json" \
     -d "${data}" \
-    "${ghurl}/repos/outscale-dev/terraform-provider-outscale/actions/workflows/generate_doc.yml/dispatches"
+    "${ghurl}/repos/outscale/terraform-provider-outscale/actions/workflows/generate_doc.yml/dispatches"
