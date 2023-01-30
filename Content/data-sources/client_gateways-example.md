@@ -1,8 +1,12 @@
 ```hcl
-data "outscale_client_gateways" "data_client_gateways01" {
+data "outscale_client_gateways" "client_gateways01" {
     filter {
-        name   = "client_gateway_ids"
-        values = ["cgw-12345678","cgw-87654321"]
+        name   = "bgp_asns"
+        values = ["65000"]
+    }
+    filter {
+        name   = "public_ips"
+        values = ["111.11.111.1", "222.22.222.2"]
     }
 }
 ```

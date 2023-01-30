@@ -1,8 +1,12 @@
 ```hcl
 data "outscale_subnets" "subnets01" {
     filter {
-        name   = "net_ids"
-        values = ["vpc-12345678", "vpc-12345679"]
+        name   = "states"
+        values = ["available"]
+    }
+    filter {
+        name   = "subregion_names"
+        values = ["eu-west-2a", "eu-west-2b"]
     }
 }
 ```

@@ -1,8 +1,12 @@
 ```hcl
-data "outscale_vpn_connections" "data_vpn_connections" {
+data "outscale_vpn_connections" "vpn_connections01" {
 	filter {
-		name   = "vpn_connection_ids"
-		values = ["vpn-12345678","vpn-87654321"]
+		name   = "client_gateway_ids"
+		values = ["cgw-12345678"]
+	}
+	filter {
+		name   = "virtual_gateway_ids"
+		values = ["vgw-12345678", "vgw-12345678"]
 	}
 }
 ```

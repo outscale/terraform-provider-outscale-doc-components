@@ -1,8 +1,12 @@
 ```hcl
-data "outscale_vms" "vms_01" {
+data "outscale_vms" "vms01" {
     filter {
-        name   = "vm_ids"
-        values = ["i-12345678", "i-12345679"]
+        name   = "tag_keys"
+        values = ["env"]
+    }
+    filter {
+        name   = "tag_values"
+        values = ["prod", "test"]
     }
 }
 ```
