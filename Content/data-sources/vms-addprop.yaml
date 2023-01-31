@@ -3,6 +3,8 @@ argument:
     filters: 
       name: filter
       description: "(Optional) A combination of a filter name and one or more filter values. You can specify this argument for as many filter names as you need. The filter name can be any of the following:"
+    filter.tags:
+      description: "The key/value combinations of the tags associated with the VMs, in the following format: `TAGKEY=TAGVALUE`."
 attribute:
   rename:
     vms.block_device_mappings: block_device_mappings_created
