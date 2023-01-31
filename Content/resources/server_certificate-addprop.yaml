@@ -1,0 +1,8 @@
+argument:
+  rename:
+    body:
+      description: The PEM-encoded X509 certificate.
+    chain:
+      description: The PEM-encoded intermediate certification authorities.
+    private_key:
+      description: The PEM-encoded private key matching the certificate.
