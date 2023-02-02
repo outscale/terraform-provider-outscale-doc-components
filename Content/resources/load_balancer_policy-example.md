@@ -2,7 +2,7 @@
 
 ```hcl
 resource "outscale_load_balancer" "load_balancer01" {
-    load_balancer_name = "terraform-load-balancer-for-browser-policy"
+    load_balancer_name = "terraform-lb-for-browser-policy"
     subregion_names    = ["eu-west-2a"]
     listeners {
         backend_port           = 8080
@@ -13,8 +13,8 @@ resource "outscale_load_balancer" "load_balancer01" {
 }
 
 resource "outscale_load_balancer_policy" "load_balancer_policy01" {
-    load_balancer_name = "terraform-load-balancer-for-browser-policy"
-    policy_name        = "terraform-load-balancer-browser-policy"
+    load_balancer_name = "terraform-lb-for-browser-policy"
+    policy_name        = "terraform-lb-browser-policy"
     policy_type        = "load_balancer"
 }
 ```
@@ -23,7 +23,7 @@ resource "outscale_load_balancer_policy" "load_balancer_policy01" {
 
 ```hcl
 resource "outscale_load_balancer" "load_balancer02" {
-    load_balancer_name = "terraform-load-balancer-for-app-policy"
+    load_balancer_name = "terraform-lb-for-app-policy"
     subregion_names    = ["${var.region}b"]
     listeners {
         load_balancer_port     = 80
@@ -35,7 +35,7 @@ resource "outscale_load_balancer" "load_balancer02" {
 
 resource "outscale_load_balancer_policy" "load_balancer_policy02" {
     load_balancer_name = outscale_load_balancer.load_balancer02.load_balancer_name
-    policy_name        = "terraform-load-balancer-app-policy"
+    policy_name        = "terraform-lb-app-policy"
     policy_type        = "app"
     cookie_name        = "cookie01"
     depends_on         = [outscale_load_balancer.load_balancer02]

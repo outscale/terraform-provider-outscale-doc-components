@@ -106,7 +106,7 @@ resource "outscale_route_table_link" "route_table_link01" {
 }
 
 resource "outscale_load_balancer" "load_balancer03" {
-    load_balancer_name = "terraform-internet-facing-private-load-balancer"
+    load_balancer_name = "terraform-internet-private-lb"
     listeners {
         backend_port           = 80
         backend_protocol       = "TCP"
@@ -124,7 +124,7 @@ resource "outscale_load_balancer" "load_balancer03" {
     public_ip          = "192.0.2.0"
     tags {s
         key   = "name"
-        value = "terraform-internet-facing-private-load-balancer"
+        value = "terraform-internet-private-lb"
     }
     depends_on = [outscale_route.route01,outscale_route_table_link.route_table_link01]
 }
