@@ -3,3 +3,10 @@ argument:
     filters: 
       name: filter
       description: "(Optional) A combination of a filter name and one or more filter values. You can specify this argument for as many filter names as you need. The filter name can be any of the following:"
+  remove:
+    - all_vms # Waiting for Terraform implementation
+    - filter.vm_states # Waiting for Terraform implementation
+attribute:
+  rename:
+    vm_state:
+      description: The state of the VM. Currently, only `running` VMs are returned.
