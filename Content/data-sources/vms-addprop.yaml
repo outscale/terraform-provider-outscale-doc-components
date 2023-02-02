@@ -8,3 +8,5 @@ argument:
 attribute:
   rename:
     vms.block_device_mappings: block_device_mappings_created
+  remove:
+   - vms.bsu_optimized

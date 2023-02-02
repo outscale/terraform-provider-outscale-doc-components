@@ -4,6 +4,7 @@ argument:
     - max_vms_count
     - min_vms_count
     - placement
+    - bsu_optimized
   add:
     get_admin_password: "(Optional) (Windows VM only) If true, waits for the administrator password of the VM to become available in order to retrieve the VM. The password is exported to the `admin_password` attribute."
     placement_subregion_name: (Optional) The name of the Subregion where the VM is placed.
@@ -13,8 +14,6 @@ argument:
     tags.key: (Required) The key of the tag, with a minimum of 1 character.
     tags.value: (Required) The value of the tag, between 0 and 255 characters.
   rename:
-    bsu_optimized:
-      description: "If true, the VM is created with optimized BSU I/O. Updating this parameter will trigger a stop/start of the VM."
     performance:
       description: "The performance of the VM (`medium` | `high` | `highest`). Updating this parameter will trigger a stop/start of the VM."
     security_groups: security_group_names
@@ -25,6 +24,7 @@ argument:
 attribute:
   remove:
     - placement
+    - bsu_optimized
   add:
     admin_password: (Windows VM only) The administrator password of the VM. This password is encrypted with the keypair you specified when launching the VM and encoded in Base64. You need to wait about 10 minutes after launching the VM to be able to retrieve this password.<br />If `get_admin_password` is false or not specified, the VM resource is created without the `admin_password` attribute. Once `admin_password` is available, it will appear in the Terraform state after the next **refresh** or **apply** command.<br />If `get_admin_password` is true, the VM resource itself is not considered created until the `admin_password` attribute is available.<br />Note also that after the first reboot of the VM, this attribute can no longer be retrieved. For more information on how to use this password to connect to the VM, see [Accessing a Windows Instance](https://docs.outscale.com/en/userguide/Accessing-a-Windows-Instance.html).
     placement_subregion_name: The name of the Subregion where the VM is placed.
