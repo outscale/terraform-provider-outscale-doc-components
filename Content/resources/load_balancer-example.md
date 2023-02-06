@@ -122,7 +122,7 @@ resource "outscale_load_balancer" "load_balancer03" {
     subnets            = [outscale_subnet.subnet02.subnet_id]
     load_balancer_type = "internet-facing"
     public_ip          = "192.0.2.0"
-    tags {s
+    tags {
         key   = "name"
         value = "terraform-internet-private-lb"
     }
