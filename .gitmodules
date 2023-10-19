@@ -1,3 +1,6 @@
 [submodule "osc-api"]
 	path = osc-api
 	url = https://github.com/outscale/osc-api
+[submodule "osc-api-deploy"]
+	path = osc-api-deploy
+	url = https://github.com/outscale/osc-api-deploy.git
