@@ -1,3 +1,5 @@
 argument:
   add:
     state: (Optional) The state for the access key (`ACTIVE` | `INACTIVE`).
+  remove:
+    - user_name # Waiting for Terraform implementation
