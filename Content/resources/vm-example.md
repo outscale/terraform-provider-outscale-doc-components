@@ -145,7 +145,7 @@ resource "outscale_vm" "vm04" {
 	image_id     = var.image_id
 	vm_type      = "c4.large"
 	keypair_name = var.keypair_name
-	nics {
+	primary_nic {
 		nic_id        = outscale_nic.nic01.nic_id
 		device_number = "0"
 	}
