@@ -117,7 +117,9 @@ resource "outscale_vm" "vm03" {
 }
 ```
 
-### Create a VM with a NIC
+### Create a VM with a primary NIC
+
+~> **Note:** If you plan to use the `outscale_nic_link`resource, it is recommended to specify the `primary_nic` argument to define the primary network interface of a VM.
 
 ```hcl
 resource "outscale_net" "net02" {
@@ -149,5 +151,44 @@ resource "outscale_vm" "vm04" {
 		nic_id        = outscale_nic.nic01.nic_id
 		device_number = "0"
 	}
+}
+```
+
+### Create a VM with secondary NICs
+
+```hcl
+resource "outscale_net" "net02" {
+    ip_range = "10.0.0.0/16"
+    tags {
+        key   = "name"
+        value = "terraform-net-for-vm-with-nic"
+    }
+}
+
+resource "outscale_subnet" "subnet02" {
+    net_id         = outscale_net.net02.net_id
+    ip_range       = "10.0.0.0/24"
+    subregion_name = "eu-west-2a"
+    tags {
+        key   = "name"
+        value = "terraform-subnet-for-vm-with-nic"
+    }
+}
+resource "outscale_nic" "nic01" {
+    subnet_id = outscale_subnet.subnet02.subnet_id
+}
+
+resource "outscale_vm" "vm04" {
+    image_id     = var.image_id
+    vm_type      = "c4.large"
+    keypair_name = var.keypair_name
+    nics {
+        nic_id        = outscale_nic.nic01.nic_id
+        device_number = "0"
+	}
+	nics {	
+		nic_id        = outscale_nic.nic02.nic_id
+        device_number = "1"
+    }
 }
 ```

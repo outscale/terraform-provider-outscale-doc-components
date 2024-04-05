@@ -1,0 +1,2 @@
+
+~> **Note:** On Net creation, the OUTSCALE API always creates an initial main route table. The `main_route_table_link`resource records the ID of the inital route table under the `default_route_table_id` attribute. The "Destroy" action for a `main_route_table_link` consists of resetting the original route table as the main route table for the Net. The additional route table must remain intact in order for the `main_route_table_link` destroy to work properly.
