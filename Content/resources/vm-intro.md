@@ -1,0 +1,1 @@
+~> **Important** Consider using the `primary_nic` argument if you plan to use the `outscale_nic_link`resource.

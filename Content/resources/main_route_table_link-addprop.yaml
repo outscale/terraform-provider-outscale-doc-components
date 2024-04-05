@@ -1,0 +1,11 @@
+argument:
+  rename:
+    subnet_id:
+      name: net_id
+      description: "The ID of the Net."
+attribute:
+  add:
+    default_route_table_id: The ID of the default route table.
+    main: If true, the route table is the main one.
+    route_table_id: The ID of the route table.
+    net_id: The ID of the Net.
