@@ -57,6 +57,6 @@ vm_state,a,VM state,VM states,https://docs.outscale.com/en/userguide/About-Insta
 vm_type,a,VM type,VM types,https://docs.outscale.com/en/userguide/Instance-Types.html,https://docs.outscale.com/api#readvmtypes
 vm,a,virtual machine (VM),virtual machines (VMs),https://docs.outscale.com/en/userguide/About-Instances.html,https://docs.outscale.com/api#3ds-outscale-api-vm
 volume,a,volume,volumes,https://docs.outscale.com/en/userguide/About-Volumes.html,https://docs.outscale.com/api#3ds-outscale-api-volume
-volumes_link,a,volume link,volume links,https://docs.outscale.com/en/userguide/About-Volumes.html,https://docs.outscale.com/api#3ds-outscale-api-volume
+volume_link,a,volume link,volume links,https://docs.outscale.com/en/userguide/About-Volumes.html,https://docs.outscale.com/api#3ds-outscale-api-volume
 vpn_connection_route,a,VPN connection route,VPN connection routes,https://docs.outscale.com/en/userguide/About-Routing-Configuration-for-VPN-Connections.html,https://docs.outscale.com/api#3ds-outscale-api-vpnconnection
 vpn_connection,a,VPN connection,VPN connections,https://docs.outscale.com/en/userguide/About-VPN-Connections.html,https://docs.outscale.com/api#3ds-outscale-api-vpnconnection

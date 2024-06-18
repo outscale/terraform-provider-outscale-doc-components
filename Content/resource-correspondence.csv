@@ -115,7 +115,7 @@
  outscale/resource_outscale_virtual_gateway_route_propagation.go, UpdateRoutePropagation
  outscale/resource_outscale_virtual_gateway.go, CreateVirtualGateway
  outscale/resource_outscale_vm.go, CreateVms
- outscale/resource_outscale_volumes_link.go, LinkVolume
+ outscale/resource_outscale_volume_link.go, LinkVolume
  outscale/resource_outscale_volume.go, CreateVolume
  outscale/resource_outscale_vpn_connection_route.go, CreateVpnConnectionRoute
  outscale/resource_outscale_vpn_connection.go, CreateVpnConnection

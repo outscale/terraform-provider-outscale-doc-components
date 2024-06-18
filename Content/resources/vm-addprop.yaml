@@ -6,6 +6,16 @@ argument:
     - placement
     - bsu_optimized
   add:
+    block_device_mappings: |
+      (Optional) One or more block device mappings.
+          * `bsu` - Information about the BSU volume to create.
+            * `delete_on_vm_deletion` - (Optional) By default or if set to true, the volume is deleted when terminating the VM. If false, the volume is not deleted when terminating the VM.
+            * `iops` - (Optional) The number of I/O operations per second (IOPS). This parameter must be specified only if you create an `io1` volume. The maximum number of IOPS allowed for `io1` volumes is `13000` with a maximum performance ratio of 300 IOPS per gibibyte.
+            * `snapshot_id` - (Optional) The ID of the snapshot used to create the volume.
+            * `volume_size` - (Optional) The size of the volume, in gibibytes (GiB).
+            * `tags`- One or more tags associated with the VM.
+                * `key`- The key of the tag with a minimum of 1 character.
+                * `value` - The value of the tag, between 0 and 255 characters.
     get_admin_password: "(Optional) (Windows VM only) If true, waits for the administrator password of the VM to become available in order to retrieve the VM. The password is exported to the `admin_password` attribute."
     nics: |
       (Optional) One or more NICs. If you specify this parameter, you must not specify the `subnet_id` and `subregion_name` parameters. To define a NIC as the primary network interface of the VM, use the `primary_nic` argument.
@@ -40,7 +50,11 @@ argument:
   rename:
     performance:
       description: "The performance of the VM (`medium` | `high` | `highest`). Updating this parameter will trigger a stop/start of the VM."
-    security_groups: security_group_names
+    security_group_ids:
+      description: "One or more IDs of security group for the VMs. You must specify at least one of the following parameters: `security_group_ids` or `security_group_names`."
+    security_groups:
+      name: security_group_names
+      description: "One or more names of security groups for the VMs. You must specify at least one of the following parameters: `security_group_ids` or `security_group_names`."
     user_data:
       description: "Data or script used to add a specific configuration to the VM. It must be Base64-encoded, either directly or using the [base64encode](https://www.terraform.io/docs/configuration/functions/base64encode.html) Terraform function. For multiline strings, use a [heredoc syntax](https://www.terraform.io/docs/configuration/expressions.html#string-literals). Updating this parameter will trigger a stop/start of the VM."
     vm_type:
