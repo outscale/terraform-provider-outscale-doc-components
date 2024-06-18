@@ -1,0 +1,5 @@
+argument:
+  rename:
+    flexible_gpu_id:
+      name: flexible_gpu_ids
+      description: (Required) The ID of one or more fGPUs you want to attach.

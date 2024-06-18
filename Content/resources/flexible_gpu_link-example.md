@@ -19,7 +19,7 @@ resource "outscale_flexible_gpu" "flexible_gpu01" {
 
 ```hcl
 resource "outscale_flexible_gpu_link" "link_fgpu01" {
-    flexible_gpu_id = outscale_flexible_gpu.flexible_gpu01.flexible_gpu_id
+    flexible_gpu_ids = [outscale_flexible_gpu.flexible_gpu01.flexible_gpu_id]
     vm_id           = outscale_vm.vm01.vm_id
 }
 ```

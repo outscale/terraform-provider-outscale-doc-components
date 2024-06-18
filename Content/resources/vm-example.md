@@ -9,11 +9,16 @@ resource "outscale_keypair" "keypair01" {
 ### Create a VM in the public Cloud
 
 ```hcl
+resource "outscale_security_group" "security_group01" {
+  description         = "vm security group"
+  security_group_name = "vm_security_group1"
+}
+
 resource "outscale_vm" "vm01" {
 	image_id                 = var.image_id
 	vm_type                  = var.vm_type
 	keypair_name             = var.keypair_name
-	security_group_ids       = [var.security_group_id]
+	security_group_ids       = [outscale_security_group.security_group01.security_group_id]
 	placement_subregion_name = "eu-west-2a"
 	placement_tenancy        = "default"
 	tags {
@@ -30,10 +35,16 @@ resource "outscale_vm" "vm01" {
 ### Create a VM with block device mappings
 
 ```hcl
+resource "outscale_security_group" "security_group01" {
+  description         = "vm security group"
+  security_group_name = "vm_security_group1"
+}
+
 resource "outscale_vm" "vm02" {
 	image_id                = var.image_id
 	vm_type                 = var.vm_type
 	keypair_name            = var.keypair_name
+	security_group_ids  	= [outscale_security_group.security_group01.security_group_id]
 	block_device_mappings {
 		device_name = "/dev/sda1" # /dev/sda1 corresponds to the root device of the VM
 		bsu {
@@ -49,6 +60,32 @@ resource "outscale_vm" "vm02" {
 			volume_type           = "io1"
 			iops                  = 150
 			delete_on_vm_deletion = true
+		}
+	}
+}
+
+
+resource "outscale_security_group" "security_group01" {
+  description         = "vm security group"
+  security_group_name = "vm_security_group1"
+}
+
+resource "outscale_vm" "vm02" {
+	image_id 				= var.image_id
+ 	vm_type 				= var.vm_type
+ 	keypair_name 			= var.keypair_name
+	security_group_ids 		= [outscale_security_group.security_group01.security_group_id]
+ 	block_device_mappings {
+		device_name = "/dev/sdb"
+		bsu {
+			volume_size           = 30
+			volume_type           = "gp2"
+			snapshot_id           = outscale_snapshot.snapshot.id
+			delete_on_vm_deletion = false
+			tags {
+				key                   = "Name"
+				value                 = "bsu-tags-gp2"
+			}
 		}
 	}
 }
@@ -122,6 +159,11 @@ resource "outscale_vm" "vm03" {
 ~> **Note:** If you plan to use the `outscale_nic_link`resource, it is recommended to specify the `primary_nic` argument to define the primary network interface of a VM.
 
 ```hcl
+resource "outscale_security_group" "security_group01" {
+  description         = "vm security group"
+  security_group_name = "vm_security_group1"
+}
+
 resource "outscale_net" "net02" {
 	ip_range = "10.0.0.0/16"
 	tags {
@@ -144,9 +186,10 @@ resource "outscale_nic" "nic01" {
 }
 
 resource "outscale_vm" "vm04" {
-	image_id     = var.image_id
-	vm_type      = "c4.large"
-	keypair_name = var.keypair_name
+	image_id     		= var.image_id
+	vm_type      		= "c4.large"
+	keypair_name 		= var.keypair_name
+	security_group_ids  = [outscale_security_group.security_group01.security_group_id]
 	primary_nic {
 		nic_id        = outscale_nic.nic01.nic_id
 		device_number = "0"
@@ -157,6 +200,11 @@ resource "outscale_vm" "vm04" {
 ### Create a VM with secondary NICs
 
 ```hcl
+resource "outscale_security_group" "security_group01" {
+  description         = "vm security group"
+  security_group_name = "vm_security_group1"
+}
+
 resource "outscale_net" "net02" {
     ip_range = "10.0.0.0/16"
     tags {
@@ -179,9 +227,10 @@ resource "outscale_nic" "nic01" {
 }
 
 resource "outscale_vm" "vm04" {
-    image_id     = var.image_id
-    vm_type      = "c4.large"
-    keypair_name = var.keypair_name
+    image_id     		= var.image_id
+    vm_type      		= "c4.large"
+    keypair_name 		= var.keypair_name
+	security_group_ids  = [outscale_security_group.security_group01.security_group_id]
     nics {
         nic_id        = outscale_nic.nic01.nic_id
         device_number = "0"
