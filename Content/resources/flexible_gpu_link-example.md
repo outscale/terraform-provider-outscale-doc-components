@@ -18,7 +18,7 @@ resource "outscale_flexible_gpu" "flexible_gpu01" {
 ### Create a flexible GPU link
 
 ```hcl
-resource "outscale_flexible_gpu_link" "link_fgpu01" {
+resource "outscale_flexible_gpu_links" "link_fgpu01" {
     flexible_gpu_ids = [outscale_flexible_gpu.flexible_gpu01.flexible_gpu_id]
     vm_id           = outscale_vm.vm01.vm_id
 }
