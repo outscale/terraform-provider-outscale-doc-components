@@ -1,5 +1,10 @@
 argument:
-  remove:
-    - filters
   add:
     net_id: (Optional) The ID of the Net.
+  remove:
+    - filters
+    - next_page_token
+    - results_per_page
+attribute:
+  remove:
+    - next_page_token
