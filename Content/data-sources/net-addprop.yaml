@@ -7,3 +7,8 @@ argument:
       description: "The key/value combinations of the tags associated with the Nets, in the following format: `TAGKEY=TAGVALUE`."
   remove:
     - filter.is_default # Waiting for Terraform implementation
+    - next_page_token
+    - results_per_page
+attribute:
+  remove:
+    - next_page_token

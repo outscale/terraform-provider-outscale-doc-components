@@ -1,5 +1,6 @@
 argument: 
   remove:
+    - description
     - permissions_to_launch
   add:
     permission_additions: (Optional) Information about the users to whom you want to give permissions for the resource.

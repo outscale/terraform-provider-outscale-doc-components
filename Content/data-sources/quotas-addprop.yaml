@@ -3,8 +3,12 @@ argument:
     filters: 
       name: filter
       description: "(Optional) A combination of a filter name and one or more filter values. You can specify this argument for as many filter names as you need. The filter name can be any of the following:"
+  remove:
+    - next_page_token
+    - results_per_page
 attribute:
   remove:
     - quota_type
+    - next_page_token
   add:
     quotas.quota_type: "The ressource ID if it is a resource-specific quota, `global` if it is not."

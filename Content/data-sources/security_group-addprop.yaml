@@ -7,3 +7,8 @@ argument:
       description: "The key/value combinations of the tags associated with the security groups, in the following format: `TAGKEY=TAGVALUE`."
   remove:
     - account_ids
+    - next_page_token
+    - results_per_page
+attribute:
+  remove:
+    - next_page_token
