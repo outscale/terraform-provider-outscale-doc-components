@@ -77,7 +77,7 @@
  outscale/resource_outscale_client_gateway.go, CreateClientGateway
  outscale/resource_outscale_dhcp_option.go, CreateDhcpOptions
  outscale/resource_outscale_flexible_gpu.go, CreateFlexibleGpu
- outscale/resource_outscale_flexible_gpu_links.go, LinkFlexibleGpu
+ outscale/resource_outscale_flexible_gpu_link.go, LinkFlexibleGpu
  outscale/resource_outscale_image_launch_permission.go, UpdateImage
  outscale/resource_outscale_image.go, CreateImage
  outscale/resource_outscale_image_export_task.go, CreateImageExportTask

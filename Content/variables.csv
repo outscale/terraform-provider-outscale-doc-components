@@ -7,7 +7,7 @@ ca,a,Certificate Authority (CA),Certificate Authorities (CAs),https://docs.outsc
 client_gateway,a,client gateway,client gateways,https://docs.outscale.com/en/userguide/About-Customer-Gateways.html,https://docs.outscale.com/api#3ds-outscale-api-clientgateway
 dhcp_option,a,DHCP option,DHCP options,https://docs.outscale.com/en/userguide/About-DHCP-Options.html,https://docs.outscale.com/api#3ds-outscale-api-dhcpoption
 flexible_gpu_catalog,a,flexible GPU catalog,the flexible GPU catalog,https://docs.outscale.com/en/userguide/About-Flexible-GPUs.html,https://docs.outscale.com/api#readflexiblegpucatalog
-flexible_gpu_links,a,flexible GPU link,flexible GPU links,https://docs.outscale.com/en/userguide/About-Flexible-GPUs.html,https://docs.outscale.com/api#3ds-outscale-api-flexiblegpu
+flexible_gpu_link,a,flexible GPU link,flexible GPU links,https://docs.outscale.com/en/userguide/About-Flexible-GPUs.html,https://docs.outscale.com/api#3ds-outscale-api-flexiblegpu
 flexible_gpu,a,flexible GPU,flexible GPUs,https://docs.outscale.com/en/userguide/About-Flexible-GPUs.html,https://docs.outscale.com/api#3ds-outscale-api-flexiblegpu
 image_export_task,an,image export task,image export tasks,https://docs.outscale.com/en/userguide/About-OMIs.html,https://docs.outscale.com/api#3ds-outscale-api-image
 image_launch_permission,an,image launch permission,image launch permissions,https://docs.outscale.com/en/userguide/About-OMIs.html,https://docs.outscale.com/api#updateimage
