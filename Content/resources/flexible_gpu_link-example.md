@@ -2,8 +2,8 @@
 
 ```hcl
 resource "outscale_vm" "vm01" {
-    image_id                 = ami-12345678
-    vm_type                  = t2.small
+    image_id                 = "ami-12345678"
+    vm_type                  = "tinav5.c1r1p2"
     keypair_name             = var.keypair_name
     placement_subregion_name = "eu-west-2a"
 }

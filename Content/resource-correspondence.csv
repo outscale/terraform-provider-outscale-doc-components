@@ -11,6 +11,7 @@
  outscale/data_source_outscale_client_gateways.go, ReadClientGateways
  outscale/data_source_outscale_dhcp_option.go, ReadDhcpOptions
  outscale/data_source_outscale_dhcp_options.go, ReadDhcpOptions
+ outscale/data_source_outscale_entities_linked_to_policy.go, ReadEntitiesLinkedToPolicy
  outscale/data_source_outscale_flexible_gpu.go, ReadFlexibleGpus
  outscale/data_source_outscale_flexible_gpus.go, ReadFlexibleGpus
  outscale/data_source_outscale_flexible_gpu_catalog.go, ReadFlexibleGpuCatalog
@@ -39,6 +40,10 @@
  outscale/data_source_outscale_nets.go, ReadNets
  outscale/data_source_outscale_nic.go, ReadNics
  outscale/data_source_outscale_nics.go, ReadNics
+ outscale/data_source_outscale_policy.go, ReadPolicy
+ outscale/data_source_outscale_policies_linked_to_user.go, ReadLinkedPolicies
+ outscale/data_source_outscale_policies_linked_to_user_group.go, ReadManagedPoliciesLinkedToUserGroup
+ outscale/data_source_outscale_policies.go, ReadPolicies
  outscale/data_source_outscale_product_type.go, ReadProductTypes
  outscale/data_source_outscale_product_types.go, ReadProductTypes
  outscale/data_source_outscale_public_ip.go, ReadPublicIps
@@ -59,6 +64,11 @@
  outscale/data_source_outscale_subnet.go, ReadSubnets
  outscale/data_source_outscale_subnets.go, ReadSubnets
  outscale/data_source_outscale_subregions.go, ReadSubregions
+ outscale/data_source_outscale_user.go, ReadUsers
+ outscale/data_source_outscale_users.go, ReadUsers
+ outscale/data_source_outscale_user_group.go, ReadUserGroup
+ outscale/data_source_outscale_user_groups.go, ReadUserGroups
+ outscale/data_source_outscale_user_groups_per_user.go, ReadUserGroupsPerUser
  outscale/data_source_outscale_virtual_gateway.go, ReadVirtualGateways
  outscale/data_source_outscale_virtual_gateways.go, ReadVirtualGateways
  outscale/data_source_outscale_vm_state.go, ReadVmsState
@@ -99,6 +109,8 @@
  outscale/resource_outscale_nic_link.go, LinkNic
  outscale/resource_outscale_nic_private_ip.go, LinkPrivateIps
  outscale/resource_outscale_nic.go, CreateNic
+ outscale/resource_outscale_policy.go, CreatePolicy
+ outscale/resource_outscale_policy_version.go, CreatePolicyVersion
  outscale/resource_outscale_public_ip_link.go, LinkPublicIp
  outscale/resource_outscale_public_ip.go, CreatePublicIp
  outscale/resource_outscale_route_table_link.go, LinkRouteTable
@@ -111,6 +123,8 @@
  outscale/resource_outscale_snapshot_export_task.go, CreateSnapshotExportTask
  outscale/resource_outscale_snapshot.go, CreateSnapshot
  outscale/resource_outscale_subnet.go, CreateSubnet
+ outscale/resource_outscale_user.go, CreateUser
+ outscale/resource_outscale_user_group.go, CreateUserGroup
  outscale/resource_outscale_virtual_gateway_link.go, LinkVirtualGateway
  outscale/resource_outscale_virtual_gateway_route_propagation.go, UpdateRoutePropagation
  outscale/resource_outscale_virtual_gateway.go, CreateVirtualGateway

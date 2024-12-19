@@ -1,0 +1,3 @@
+argument:
+  add:
+    set_as_default: (Optional) If set to true, the new policy version is set as the default version, meaning it becomes the active one. Otherwise, the new policy version is not actually active until the `default_version_id` is specified in the `outscale_user` or `outscale_user_group` resources.
