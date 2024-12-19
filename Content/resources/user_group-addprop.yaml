@@ -1,0 +1,3 @@
+argument:
+  add:
+    default_version_id: The ID of a policy version that you want to make the default one (the active one).

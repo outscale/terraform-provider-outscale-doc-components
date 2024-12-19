@@ -5,5 +5,4 @@ argument:
     tags.value: (Required) The value of the tag, between 0 and 255 characters.
 attribute:
   remove:
-    - backend_ips # Waiting for Terraform implementation
     - load_balancer_sticky_cookie_policies.cookie_expiration_period # Waiting for Terraform implementation

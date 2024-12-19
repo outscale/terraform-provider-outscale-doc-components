@@ -6,6 +6,7 @@ api_access_rule,an,API access rule,API access rules,https://docs.outscale.com/en
 ca,a,Certificate Authority (CA),Certificate Authorities (CAs),https://docs.outscale.com/en/userguide/About-API-Access-Rules.html,https://docs.outscale.com/api#3ds-outscale-api-ca
 client_gateway,a,client gateway,client gateways,https://docs.outscale.com/en/userguide/About-Customer-Gateways.html,https://docs.outscale.com/api#3ds-outscale-api-clientgateway
 dhcp_option,a,DHCP option,DHCP options,https://docs.outscale.com/en/userguide/About-DHCP-Options.html,https://docs.outscale.com/api#3ds-outscale-api-dhcpoption
+entities_linked_to_policy,,"entities (account, users, or user groups) linked to a specific managed policy",,https://docs.outscale.com/en/userguide/About-Policies.html,https://docs.outscale.com/api.html#readentitieslinkedtopolicy
 flexible_gpu_catalog,a,flexible GPU catalog,the flexible GPU catalog,https://docs.outscale.com/en/userguide/About-Flexible-GPUs.html,https://docs.outscale.com/api#readflexiblegpucatalog
 flexible_gpu_link,a,flexible GPU link,flexible GPU links,https://docs.outscale.com/en/userguide/About-Flexible-GPUs.html,https://docs.outscale.com/api#3ds-outscale-api-flexiblegpu
 flexible_gpu,a,flexible GPU,flexible GPUs,https://docs.outscale.com/en/userguide/About-Flexible-GPUs.html,https://docs.outscale.com/api#3ds-outscale-api-flexiblegpu
@@ -19,7 +20,7 @@ load_balancer_attributes,a,load balancer attribute,load balancer attributes,http
 load_balancer_listener_rule,a,load balancer listener rule,load balancer listener rules,https://docs.outscale.com/en/userguide/About-Load-Balancers.html,https://docs.outscale.com/api#3ds-outscale-api-listener
 load_balancer_listener,a,load balancer listener,load balancer listeners,https://docs.outscale.com/en/userguide/About-Load-Balancers.html,https://docs.outscale.com/api#3ds-outscale-api-listener
 load_balancer_policy,a,load balancer policy,load balancer policies,https://docs.outscale.com/en/userguide/About-Load-Balancers.html,https://docs.outscale.com/api#3ds-outscale-api-loadbalancerpolicy
-load_balancer_vm_health,a,load balancer VM health,the health of one or more back-end VMs registered with a specific load balancer,https://docs.outscale.com/en/userguide/About-Load-Balancers.html,https://docs.outscale.com/api#readvmshealth
+load_balancer_vm_health,a,load balancer VM health,the health of one or more backend VMs registered with a specific load balancer,https://docs.outscale.com/en/userguide/About-Load-Balancers.html,https://docs.outscale.com/api#readvmshealth
 load_balancer_vms,a,load balancer VM,load balancer VMs,https://docs.outscale.com/en/userguide/About-Load-Balancers.html,https://docs.outscale.com/api#3ds-outscale-api-loadbalancer
 load_balancer,a,load balancer,load balancers,https://docs.outscale.com/en/userguide/About-Load-Balancers.html,https://docs.outscale.com/api#3ds-outscale-api-loadbalancer
 main_route_table_link,a,main route table link,main route table links,https://docs.outscale.com/en/userguide/About-Route-Tables.html,https://docs.outscale.com/api#3ds-outscale-api-routetable
@@ -34,6 +35,8 @@ net,a,Net,Nets,https://docs.outscale.com/en/userguide/About-VPCs.html,https://do
 nic_link,a,NIC link,NIC links,https://docs.outscale.com/en/userguide/About-FNIs.html,https://docs.outscale.com/api#3ds-outscale-api-nic
 nic_private_ip,a,NIC's private IPs,NIC private IPs,https://docs.outscale.com/en/userguide/About-FNIs.html,https://docs.outscale.com/api#3ds-outscale-api-nic
 nic,a,network interface card (NIC),network interface cards (NICs),https://docs.outscale.com/en/userguide/About-FNIs.html,https://docs.outscale.com/api#3ds-outscale-api-nic
+policy,a,policy,policies,https://docs.outscale.com/en/userguide/About-Policies.html,https://docs.outscale.com/api.html#createpolicy
+policy_version,a,policy version, policy versions,https://docs.outscale.com/en/userguide/Editing-Managed-Policies-Using-Policy-Versions.html,https://docs.outscale.com/api.html#createpolicyversion
 product_type,a,product type,product types,https://docs.outscale.com/en/userguide/Software-Licenses.html,https://docs.outscale.com/api#3ds-outscale-api-producttype
 public_ip_link,a,public IP link,public IP links,https://docs.outscale.com/en/userguide/About-EIPs.html,https://docs.outscale.com/api#3ds-outscale-api-publicip
 public_ip,a,public IP,public IPs,https://docs.outscale.com/en/userguide/About-EIPs.html,https://docs.outscale.com/api#3ds-outscale-api-publicip
@@ -50,6 +53,9 @@ snapshot_export_task,a,snapshot export task,snapshot export tasks,https://docs.o
 snapshot,a,snapshot,snapshots,https://docs.outscale.com/en/userguide/About-Snapshots.html,https://docs.outscale.com/api#3ds-outscale-api-snapshot
 subnet,a,Subnet,Subnets,https://docs.outscale.com/en/userguide/About-VPCs.html,https://docs.outscale.com/api#3ds-outscale-api-subnet
 subregion,a,subregion,subregions,https://docs.outscale.com/en/userguide/About-Regions-Endpoints-and-Availability-Zones.html,https://docs.outscale.com/api#readsubregions
+user,a,user,users,https://docs.outscale.com/en/userguide/About-EIM-Users.html,https://docs.outscale.com/api.html#createuser
+user_group,a,user group,user groups,https://docs.outscale.com/en/userguide/About-EIM-Groups.html,https://docs.outscale.com/api.html#createusergroup
+user_groups_per_user,,groups that a specified user belongs to,,https://docs.outscale.com/en/userguide/About-EIM-Groups.html,https://docs.outscale.com/api.html#readusergroupsperuser
 virtual_gateway_link,a,virtual gateway link,virtual gateway links,https://docs.outscale.com/en/userguide/About-Virtual-Private-Gateways.html,https://docs.outscale.com/api#3ds-outscale-api-virtualgateway
 virtual_gateway_route_propagation,a,virtual gateway route propagation,virtual gateway route propagations,https://docs.outscale.com/en/userguide/About-Routing-Configuration-for-VPN-Connections.html,https://docs.outscale.com/api#updateroutepropagation
 virtual_gateway,a,virtual gateway,virtual gateways,https://docs.outscale.com/en/userguide/About-Virtual-Private-Gateways.html,https://docs.outscale.com/api#3ds-outscale-api-virtualgateway
