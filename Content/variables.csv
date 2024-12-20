@@ -35,7 +35,7 @@ net,a,Net,Nets,https://docs.outscale.com/en/userguide/About-VPCs.html,https://do
 nic_link,a,NIC link,NIC links,https://docs.outscale.com/en/userguide/About-FNIs.html,https://docs.outscale.com/api#3ds-outscale-api-nic
 nic_private_ip,a,NIC's private IPs,NIC private IPs,https://docs.outscale.com/en/userguide/About-FNIs.html,https://docs.outscale.com/api#3ds-outscale-api-nic
 nic,a,network interface card (NIC),network interface cards (NICs),https://docs.outscale.com/en/userguide/About-FNIs.html,https://docs.outscale.com/api#3ds-outscale-api-nic
-policies,a,policy,policies,https://docs.outscale.com/en/userguide/About-Policies.html,https://docs.outscale.com/api.html#readpolicies
+policies,a,policy,policies,https://docs.outscale.com/en/userguide/Getting-Information-About-a-Managed-Policy.html,https://docs.outscale.com/api.html#readpolicies
 policies_linked_to_user,a,link policy to user,link policies to user,https://docs.outscale.com/en/userguide/About-Policies.html,https://docs.outscale.com/api.html#readlinkedpolicies
 policies_linked_to_user_group,a,link policy to user group,link policies to user group,https://docs.outscale.com/en/userguide/About-Policies.html,https://docs.outscale.com/api.html#readmanagedpolicieslinkedtousergroup
 policy,a,policy,policies,https://docs.outscale.com/en/userguide/About-Policies.html,https://docs.outscale.com/api.html#createpolicy
