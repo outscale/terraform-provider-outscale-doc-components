@@ -1,5 +1,6 @@
 argument:
   add:
+    accepter_net_id: (Required) The ID of the Net you want to connect with.
     tags: (Optional) A tag to add to this resource. You can specify this argument several times.
     tags.key: (Required) The key of the tag, with a minimum of 1 character.
     tags.value: (Required) The value of the tag, between 0 and 255 characters.

@@ -1,0 +1,4 @@
+attribute:
+  remove:
+    - keypair_id # Waiting for Terraform implementation
+    - tags # Waiting for Terraform implementation
