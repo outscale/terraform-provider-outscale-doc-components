@@ -4,5 +4,3 @@ argument:
     tags: (Optional) A tag to add to this resource. You can specify this argument several times.
     tags.key: (Required) The key of the tag, with a minimum of 1 character.
     tags.value: (Required) The value of the tag, between 0 and 255 characters.
-  remove:
-    - accepter_owner_id
