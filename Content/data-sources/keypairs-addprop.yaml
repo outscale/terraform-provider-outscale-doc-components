@@ -4,14 +4,8 @@ argument:
       name: filter
       description: "(Optional) A combination of a filter name and one or more filter values. You can specify this argument for as many filter names as you need. The filter name can be any of the following:"
   remove:
-    - filter.keypair_ids # Waiting for Terraform implementation
-    - filter.tag_keys # Waiting for Terraform implementation
-    - filter.tag_values # Waiting for Terraform implementation
-    - filter.tags # Waiting for Terraform implementation
     - next_page_token
     - results_per_page
 attribute:
   remove:
-    - keypairs.keypair_id # Waiting for Terraform implementation
-    - keypairs.tags # Waiting for Terraform implementation
     - next_page_token
