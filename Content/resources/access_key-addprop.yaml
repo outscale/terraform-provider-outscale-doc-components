@@ -1,3 +1,8 @@
 argument:
   add:
     state: (Optional) The state for the access key (`ACTIVE` | `INACTIVE`).
+  remove:
+    - tag # Waiting for Terraform implementation
+attribute:
+  remove:
+    - tag # Waiting for Terraform implementation
