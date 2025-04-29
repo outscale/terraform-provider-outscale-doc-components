@@ -122,7 +122,7 @@
  outscale/resource_outscale_snapshot_attributes.go, UpdateSnapshot
  outscale/resource_outscale_snapshot_export_task.go, CreateSnapshotExportTask
  outscale/resource_outscale_snapshot.go, CreateSnapshot
- outscale/resource_outscale_subnet.go, CreateSubnet
+ outscale/resource_subnet.go, CreateSubnet
  outscale/resource_outscale_user.go, CreateUser
  outscale/resource_outscale_user_group.go, CreateUserGroup
  outscale/resource_outscale_virtual_gateway_link.go, LinkVirtualGateway
