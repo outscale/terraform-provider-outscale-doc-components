@@ -6,9 +6,9 @@ on:
 
 jobs:
   dispatch-trigger:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Getting release details
         id: release
         run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
