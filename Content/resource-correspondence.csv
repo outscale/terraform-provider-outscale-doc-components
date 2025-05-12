@@ -103,8 +103,8 @@
  outscale/resource_outscale_nat_service.go, CreateNatService
  outscale/resource_outscale_net_access_point.go, CreateNetAccessPoint
  outscale/resource_outscale_net_attributes.go, UpdateNet
- outscale/resource_outscale_net_peering_acceptation.go, AcceptNetPeering
- outscale/resource_outscale_net_peering.go, CreateNetPeering
+ outscale/resource_net_peering_acceptation.go, AcceptNetPeering
+ outscale/resource_net_peering.go, CreateNetPeering
  outscale/resource_net.go, CreateNet
  outscale/resource_outscale_nic_link.go, LinkNic
  outscale/resource_outscale_nic_private_ip.go, LinkPrivateIps
