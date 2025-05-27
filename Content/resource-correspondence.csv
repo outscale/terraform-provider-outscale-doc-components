@@ -91,8 +91,8 @@
  outscale/resource_outscale_image_launch_permission.go, UpdateImage
  outscale/resource_outscale_image.go, CreateImage
  outscale/resource_outscale_image_export_task.go, CreateImageExportTask
- outscale/resource_outscale_internet_service_link.go, LinkInternetService
- outscale/resource_outscale_internet_service.go, CreateInternetService
+ outscale/resource_internet_service_link.go, LinkInternetService
+ outscale/resource_internet_service.go, CreateInternetService
  outscale/resource_keypair.go, CreateKeypair
  outscale/resource_outscale_load_balancer_attributes.go, UpdateLoadBalancer
  outscale/resource_outscale_load_balancer_listener_rule.go, CreateListenerRule
