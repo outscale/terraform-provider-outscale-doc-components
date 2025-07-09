@@ -14,7 +14,7 @@ push_to_github:
    - LATEST_OSC_API_TAG_NAME=$(curl -sS https://api.github.com/repos/outscale/osc-api/releases/latest | ./jq -r .tag_name)
    - LATEST_OSC_API_COMMIT_ID=$(curl -sS https://api.github.com/repos/outscale/osc-api/git/ref/tags/$LATEST_OSC_API_TAG_NAME | ./jq -r .object.sha)
    - LOCAL_OSC_API_COMMIT_ID=$(cd osc-api && git rev-parse HEAD && cd ..)
-   - if [ "$(diff <( echo "$LATEST_OSC_API_COMMIT_ID" ) <( echo "$LOCAL_OSC_API_COMMIT_ID" ))" ]; then
+   - if [ "$(cmp <( echo "$LATEST_OSC_API_COMMIT_ID" ) <( echo "$LOCAL_OSC_API_COMMIT_ID" ))" ]; then
        echo "Commit ID of the latest 'osc-api' release is  "$LATEST_OSC_API_COMMIT_ID;
        echo "Commit ID of the local 'osc-api' submodule is "$LOCAL_OSC_API_COMMIT_ID;
        echo "=> The 'osc-api' submodule is not up to date compared to the latest release of https://github.com/outscale/osc-api!";
