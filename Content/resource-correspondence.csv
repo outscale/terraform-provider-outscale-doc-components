@@ -99,9 +99,9 @@
  outscale/resource_outscale_load_balancer_policy.go, CreateLoadBalancerPolicy
  outscale/resource_outscale_load_balancer_vms.go, RegisterVmsInLoadBalancer
  outscale/resource_outscale_load_balancer.go, CreateLoadBalancer
- outscale/resource_outscale_main_route_table_link.go, LinkRouteTable
+ outscale/resource_main_route_table_link.go, LinkRouteTable
  outscale/resource_outscale_nat_service.go, CreateNatService
- outscale/resource_outscale_net_access_point.go, CreateNetAccessPoint
+ outscale/resource_net_access_point.go, CreateNetAccessPoint
  outscale/resource_net_attributes.go, UpdateNet
  outscale/resource_net_peering_acceptation.go, AcceptNetPeering
  outscale/resource_net_peering.go, CreateNetPeering
@@ -113,9 +113,9 @@
  outscale/resource_outscale_policy_version.go, CreatePolicyVersion
  outscale/resource_outscale_public_ip_link.go, LinkPublicIp
  outscale/resource_outscale_public_ip.go, CreatePublicIp
- outscale/resource_outscale_route_table_link.go, LinkRouteTable
- outscale/resource_outscale_route_table.go, CreateRouteTable
- outscale/resource_outscale_route.go, CreateRoute
+ outscale/resource_route_table_link.go, LinkRouteTable
+ outscale/resource_route_table.go, CreateRouteTable
+ outscale/resource_route.go, CreateRoute
  outscale/resource_outscale_security_group_rule.go, CreateSecurityGroupRule
  outscale/resource_outscale_security_group.go, CreateSecurityGroup
  outscale/resource_outscale_server_certificate.go, CreateServerCertificate
@@ -129,7 +129,7 @@
  outscale/resource_outscale_virtual_gateway_route_propagation.go, UpdateRoutePropagation
  outscale/resource_outscale_virtual_gateway.go, CreateVirtualGateway
  outscale/resource_outscale_vm.go, CreateVms
- outscale/resource_outscale_volume_link.go, LinkVolume
- outscale/resource_outscale_volume.go, CreateVolume
+ outscale/resource_volume_link.go, LinkVolume
+ outscale/resource_volume.go, CreateVolume
  outscale/resource_outscale_vpn_connection_route.go, CreateVpnConnectionRoute
  outscale/resource_outscale_vpn_connection.go, CreateVpnConnection
