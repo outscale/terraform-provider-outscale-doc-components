@@ -16,7 +16,6 @@ argument:
             * `tags`- One or more tags associated with the VM.
                 * `key`- The key of the tag with a minimum of 1 character.
                 * `value` - The value of the tag, between 0 and 255 characters.
-    boot_mode: (Optional) Information about the boot mode of the VM (`legacy` | `uefi`).
     get_admin_password: "(Optional) (Windows VM only) If true, waits for the administrator password of the VM to become available in order to retrieve the VM. The password is exported to the `admin_password` attribute."
     nics: |
       (Optional) One or more NICs. If you specify this parameter, you must not specify the `subnet_id` and `subregion_name` parameters. To define a NIC as the primary network interface of the VM, use the `primary_nic` argument.
@@ -44,7 +43,6 @@ argument:
           * `secondary_private_ip_count` - (Optional) The number of secondary private IPs, if you create a NIC when creating a VM. This parameter cannot be specified if you specified more than one private IP in the `private_ips` parameter.
           * `security_group_ids` - (Optional) One or more IDs of security groups for the NIC, if you create a NIC when creating a VM.
           * `subnet_id` - (Optional) The ID of the Subnet for the NIC, if you create a NIC when creating a VM. This parameter is required if you create a NIC when creating the VM.
-    secure_boot_action: (Optional) One action to perform on the next boot of the VM (`enable` | `disable` | `setup-mode` |`none`).<br /> For more information, see [About Secure Boot](https://docs.outscale.com/en/userguide/About-Secure-Boot.html#_secure_boot_actions).
     state: The state of the VM (`running` | `stopped`). If set to `stopped`, the VM is stopped regardless of the value of the `vm_initiated_shutdown_behavior` argument.
     tags: (Optional) A tag to add to this resource. You can specify this argument several times.
     tags.key: (Required) The key of the tag, with a minimum of 1 character.
@@ -66,13 +64,8 @@ attribute:
     - placement
     - bsu_optimized
   add:
-    actions_on_next_boot: |
-      The action to perform on the next boot of the VM.
-          * `secure_boot` - One action to perform on the next boot of the VM (`enable` | `disable` | `setup-mode` |`none`). For more information, see [About Secure Boot](https://docs.outscale.com/en/userguide/About-Secure-Boot.html#_secure_boot_actions).
     admin_password: (Windows VM only) The administrator password of the VM. This password is encrypted with the keypair you specified when launching the VM and encoded in Base64. You need to wait about 10 minutes after launching the VM to be able to retrieve this password.<br />If `get_admin_password` is false or not specified, the VM resource is created without the `admin_password` attribute. Once `admin_password` is available, it will appear in the Terraform state after the next **refresh** or **apply** command.<br />If `get_admin_password` is true, the VM resource itself is not considered created until the `admin_password` attribute is available.<br />Note also that after the first reboot of the VM, this attribute can no longer be retrieved. For more information on how to use this password to connect to the VM, see [Accessing a Windows VM](https://docs.outscale.com/en/userguide/Accessing-a-Windows-VM.html).
-    boot_mode: The boot mode of the VM (`legacy` | `uefi`).
     placement_subregion_name: The name of the Subregion where the VM is placed.
     placement_tenancy: The tenancy of the VM (`default` | `dedicated`).
-    secure_boot_action: The action to perform on the next boot of the VM (`enable` | `disable` | `setup-mode` |`none`).
   rename:
     block_device_mappings: block_device_mappings_created
