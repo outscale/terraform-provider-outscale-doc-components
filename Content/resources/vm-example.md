@@ -241,3 +241,25 @@ resource "outscale_vm" "vm04" {
     }
 }
 ```
+
+### Create a VM with Secure Boot
+
+~> **Important** Secure Boot is only available with VMs booting in Unified Extensible Firmware Interface (UEFI).
+
+```hcl
+resource "outscale_security_group" "security_group01" {
+  description         = "vm security group"
+  security_group_name = "vm_security_group1"
+}
+
+resource "outscale_vm" "outscale_vm_TF206" {
+  image_id            = var.image_id
+  vm_type             = "tinav5.c3r3"
+  keypair_name 		= var.keypair_name
+  security_group_ids       = [outscale_security_group.security_group01.security_group_id]
+  deletion_protection = false
+  state               = "stopped"
+  boot_mode           = "uefi"
+  secure_boot_action  = "enable"
+}
+```
