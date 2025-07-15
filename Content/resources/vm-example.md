@@ -263,3 +263,25 @@ resource "outscale_vm" "outscale_vm_TF206" {
   secure_boot_action  = "enable"
 }
 ```
+
+### Create a VM with an ephemeral keypair
+
+~> **Important** Ephemeral keypairs are only available in Terraform versions 1.10 and up.
+
+```hcl
+ephemeral "outscale_keypair" "ephemeral_keypair" {
+  keypair_name = "ephemeral-keypair"
+  }
+
+resource "outscale_security_group" "security_group01" {
+  description         = "vm security group"
+  security_group_name = "vm_security_group12"
+}
+
+resource "outscale_vm" "outscale_vm_TF206" {
+  image_id            = var.image_id
+  vm_type             = var.vm_type
+  keypair_name_wo     = ephemeral.outscale_keypair.keypair_ephemeral.keypair_name
+  security_group_ids  = [outscale_security_group.security_group01.security_group_id] 
+}
+```

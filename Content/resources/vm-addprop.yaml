@@ -18,6 +18,7 @@ argument:
                 * `value` - The value of the tag, between 0 and 255 characters.
     boot_mode: (Optional) Information about the boot mode of the VM (`legacy` | `uefi`).
     get_admin_password: "(Optional) (Windows VM only) If true, waits for the administrator password of the VM to become available in order to retrieve the VM. The password is exported to the `admin_password` attribute."
+    keypair_name_wo: The name of the keypair. This write-only parameter is required to use the ephemeral keypair resource.
     nics: |
       (Optional) One or more NICs. If you specify this parameter, you must not specify the `subnet_id` and `subregion_name` parameters. To define a NIC as the primary network interface of the VM, use the `primary_nic` argument.
           * `delete_on_vm_deletion` - (Optional) If true, the NIC is deleted when the VM is terminated. You can specify this parameter only for a new NIC. To modify this value for an existing NIC, see [UpdateNic](https://docs.outscale.com/api#updatenic).
