@@ -97,7 +97,7 @@
  outscale/resource_outscale_load_balancer_attributes.go, UpdateLoadBalancer
  outscale/resource_outscale_load_balancer_listener_rule.go, CreateListenerRule
  outscale/resource_outscale_load_balancer_policy.go, CreateLoadBalancerPolicy
- outscale/resource_outscale_load_balancer_vms.go, RegisterVmsInLoadBalancer
+ outscale/resource_load_balancer_vms.go, RegisterVmsInLoadBalancer
  outscale/resource_outscale_load_balancer.go, CreateLoadBalancer
  outscale/resource_main_route_table_link.go, LinkRouteTable
  outscale/resource_outscale_nat_service.go, CreateNatService
